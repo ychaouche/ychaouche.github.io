@@ -1,0 +1,2126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>-*-outline-*-</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="title" content="-*-outline-*-"/>
+    <meta name="generator" content="Org-mode"/>
+    <meta name="generated" content="2022-04-11T15:11+0100"/>
+    <meta name="author" content="Yassine Chaouche"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <style type="text/css">
+      <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+    </style>
+    <script type="text/javascript" src="http://orgmode.org/org-info.js">
+      /**
+      *
+      * @source: http://orgmode.org/org-info.js
+      *
+      * @licstart  The following is the entire license notice for the
+      *  JavaScript code in http://orgmode.org/org-info.js.
+      *
+      * Copyright (C) 2012-2013  Sebastian Rose
+      *
+      *
+      * The JavaScript code in this tag is free software: you can
+      * redistribute it and/or modify it under the terms of the GNU
+      * General Public License (GNU GPL) as published by the Free Software
+      * Foundation, either version 3 of the License, or (at your option)
+      * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+      * without even the implied warranty of MERCHANTABILITY or FITNESS
+      * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+      *
+      * As additional permission under GNU GPL version 3 section 7, you
+      * may distribute non-source (e.g., minimized or compacted) forms of
+      * that code without the copy of the GNU GPL normally required by
+      * section 4, provided you include this license notice and a URL
+      * through which recipients can access the Corresponding Source.
+      *
+      * @licend  The above is the entire license notice
+      * for the JavaScript code in http://orgmode.org/org-info.js.
+      *
+      */
+    </script>
+
+    <script type="text/javascript">
+
+      /*
+      @licstart  The following is the entire license notice for the
+      JavaScript code in this tag.
+
+      Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+      The JavaScript code in this tag is free software: you can
+      redistribute it and/or modify it under the terms of the GNU
+      General Public License (GNU GPL) as published by the Free Software
+      Foundation, either version 3 of the License, or (at your option)
+      any later version.  The code is distributed WITHOUT ANY WARRANTY;
+      without even the implied warranty of MERCHANTABILITY or FITNESS
+      FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+      As additional permission under GNU GPL version 3 section 7, you
+      may distribute non-source (e.g., minimized or compacted) forms of
+      that code without the copy of the GNU GPL normally required by
+      section 4, provided you include this license notice and a URL
+      through which recipients can access the Corresponding Source.
+
+
+      @licend  The above is the entire license notice
+      for the JavaScript code in this tag.
+      */
+
+      <!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "folding");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+    </script>
+    <script type="text/javascript">
+      /*
+      @licstart  The following is the entire license notice for the
+      JavaScript code in this tag.
+
+      Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+      The JavaScript code in this tag is free software: you can
+      redistribute it and/or modify it under the terms of the GNU
+      General Public License (GNU GPL) as published by the Free Software
+      Foundation, either version 3 of the License, or (at your option)
+      any later version.  The code is distributed WITHOUT ANY WARRANTY;
+      without even the implied warranty of MERCHANTABILITY or FITNESS
+      FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+      As additional permission under GNU GPL version 3 section 7, you
+      may distribute non-source (e.g., minimized or compacted) forms of
+      that code without the copy of the GNU GPL normally required by
+      section 4, provided you include this license notice and a URL
+      through which recipients can access the Corresponding Source.
+
+
+      @licend  The above is the entire license notice
+      for the JavaScript code in this tag.
+      */
+      <!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+    </script>
+
+  </head>
+  <body>
+
+    <div id="preamble">
+
+    </div>
+
+    <div id="content">
+      <h1 class="title">-*-outline-*-</h1>
+
+      <p>Voir aussi tabs &gt; distros<br/>
+      </p>
+      <div id="table-of-contents">
+	<h2>Table of Contents</h2>
+	<div id="text-table-of-contents">
+	  <ul>
+	    <li><a href="#sec-1">1 haven't tried yet</a>
+	      <ul>
+		<li><a href="#sec-1-1">1.1 RockyLinux</a>
+		  <ul>
+		    <li><a href="#sec-1-1-1">1.1.1 whatis</a></li>
+		    <li><a href="#sec-1-1-2">1.1.2 watch out</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-1-2">1.2 OpenSuse</a>
+		  <ul>
+		    <li><a href="#sec-1-2-1">1.2.1 why choose</a></li>
+		    <li><a href="#sec-1-2-2">1.2.2 check</a></li>
+		    <li><a href="#sec-1-2-3">1.2.3 quirks</a></li>
+		    <li><a href="#sec-1-2-4">1.2.4 problems</a></li>
+		    <li><a href="#sec-1-2-5">1.2.5 links</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-1-3">1.3 OpenIndiana</a>
+		  <ul>
+		    <li><a href="#sec-1-3-1">1.3.1 whatis</a></li>
+		    <li><a href="#sec-1-3-2">1.3.2 community</a></li>
+		    <li><a href="#sec-1-3-3">1.3.3 features </a></li>
+		    <li><a href="#sec-1-3-4">1.3.4 criticismes</a></li>
+		    <li><a href="#sec-1-3-5">1.3.5 watch out for</a></li>
+		</ul></li>
+	      </ul>
+	    </li>
+	    <li><a href="#sec-2">2 tried</a>
+	      <ul>
+		<li><a href="#sec-2-1">2.1 Mabox</a>
+		  <ul>
+		    <li><a href="#sec-2-1-1">2.1.1 appraisals</a></li>
+		    <li><a href="#sec-2-1-2">2.1.2 whatis</a></li>
+		    <li><a href="#sec-2-1-3">2.1.3 features</a></li>
+		    <li><a href="#sec-2-1-4">2.1.4 watch out for</a></li>
+		    <li><a href="#sec-2-1-5">2.1.5 problems</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-2-2">2.2 Linux Lite</a></li>
+		<li><a href="#sec-2-3">2.3 Kubuntu</a>
+		  <ul>
+		    <li><a href="#sec-2-3-1">2.3.1 plus</a></li>
+		    <li><a href="#sec-2-3-2">2.3.2 criticismes</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-2-4">2.4 Linux Mint</a>
+		  <ul>
+		    <li><a href="#sec-2-4-1">2.4.1 Features</a></li>
+		    <li><a href="#sec-2-4-2">2.4.2 Acclaims</a></li>
+		    <li><a href="#sec-2-4-3">2.4.3 Criticismes</a></li>
+		    <li><a href="#sec-2-4-4">2.4.4 Misc</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-2-5">2.5 KDE Neon</a></li>
+		<li><a href="#sec-2-6">2.6 NuTyX GNU/Linux</a></li>
+		<li><a href="#sec-2-7">2.7 Elementary OS</a></li>
+		<li><a href="#sec-2-8">2.8 Netrunner</a></li>
+		<li><a href="#sec-2-9">2.9 MX Linux :</a></li>
+		<li><a href="#sec-2-10">2.10 Deepin</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#sec-3">3 Won't try</a>
+	      <ul>
+		<li><a href="#sec-3-1">3.1 Rebornos</a>
+		  <ul>
+		    <li><a href="#sec-3-1-1">3.1.1 gle</a></li>
+		    <li><a href="#sec-3-1-2">3.1.2 features</a></li>
+		    <li><a href="#sec-3-1-3">3.1.3 criticisme</a></li>
+		    <li><a href="#sec-3-1-4">3.1.4 appraisal</a></li>
+		    <li><a href="#sec-3-1-5">3.1.5 community</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-3-2">3.2 Qubes OS</a></li>
+		<li><a href="#sec-3-3">3.3 Devuan</a>
+		  <ul>
+		    <li><a href="#sec-3-3-1">3.3.1 Features</a></li>
+		    <li><a href="#sec-3-3-2">3.3.2 Criticismes</a></li>
+		    <li><a href="#sec-3-3-3">3.3.3 Acclaims</a></li>
+		    <li><a href="#sec-3-3-4">3.3.4 Community</a></li>
+		    <li><a href="#sec-3-3-5">3.3.5 misc</a></li>
+		    <li><a href="#sec-3-3-6">3.3.6 Autres distros n'utilisant pas systemd</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-3-4">3.4 4MLinux</a></li>
+		<li><a href="#sec-3-5">3.5 OpenMandriva</a>
+		  <ul>
+		    <li><a href="#sec-3-5-1">3.5.1 Features</a></li>
+		    <li><a href="#sec-3-5-2">3.5.2 Criticismes</a></li>
+		    <li><a href="#sec-3-5-3">3.5.3 Community</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-3-6">3.6 SparkyLinux</a>
+		  <ul>
+		    <li><a href="#sec-3-6-1">3.6.1 Acclaims</a></li>
+		    <li><a href="#sec-3-6-2">3.6.2 Features</a></li>
+		    <li><a href="#sec-3-6-3">3.6.3 Criticismes</a></li>
+		    <li><a href="#sec-3-6-4">3.6.4 Community</a></li>
+		  </ul>
+		</li>
+		<li><a href="#sec-3-7">3.7 Oracle</a></li>
+		<li><a href="#sec-3-8">3.8 PCLinuxOS</a></li>
+		<li><a href="#sec-3-9">3.9 Fedora</a></li>
+		<li><a href="#sec-3-10">3.10 Emmabuntus</a></li>
+		<li><a href="#sec-3-11">3.11 Paldo</a></li>
+		<li><a href="#sec-3-12">3.12 Zentyal</a></li>
+		<li><a href="#sec-3-13">3.13 SpringDale Linux</a></li>
+		<li><a href="#sec-3-14">3.14 SmartOS</a></li>
+		<li><a href="#sec-3-15">3.15 NetBSD</a></li>
+		<li><a href="#sec-3-16">3.16 ExTix</a></li>
+		<li><a href="#sec-3-17">3.17 Hanthana</a></li>
+		<li><a href="#sec-3-18">3.18 Runtu</a></li>
+		<li><a href="#sec-3-19">3.19 BlackPanther OS</a></li>
+		<li><a href="#sec-3-20">3.20 Robolinux</a></li>
+		<li><a href="#sec-3-21">3.21 Voyagerlive</a></li>
+		<li><a href="#sec-3-22">3.22 Fatdog Linux</a></li>
+		<li><a href="#sec-3-23">3.23 Feren OS</a></li>
+		<li><a href="#sec-3-24">3.24 Pop OS</a></li>
+		<li><a href="#sec-3-25">3.25 Kodachi Linux</a></li>
+		<li><a href="#sec-3-26">3.26 Parrot</a></li>
+		<li><a href="#sec-3-27">3.27 Slackel</a></li>
+		<li><a href="#sec-3-28">3.28 Solus</a></li>
+		<li><a href="#sec-3-29">3.29 Ultimate Edition</a></li>
+		<li><a href="#sec-3-30">3.30 Neptune</a></li>
+		<li><a href="#sec-3-31">3.31 KaOS</a></li>
+		<li><a href="#sec-3-32">3.32 BlankOn</a></li>
+		<li><a href="#sec-3-33">3.33 Clear Linux</a></li>
+		<li><a href="#sec-3-34">3.34 Berry linux</a></li>
+		<li><a href="#sec-3-35">3.35 Fugulta</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#sec-4">4 online distro tester</a></li>
+	    <li><a href="#sec-5">5 HTML version</a></li>
+	  </ul>
+	</div>
+      </div>
+
+      <div id="outline-container-1" class="outline-2">
+	<h2 id="sec-1"><span class="section-number-2">1</span> haven't tried yet</h2>
+	<div class="outline-text-2" id="text-1">
+
+
+	</div>
+
+	<div id="outline-container-1-1" class="outline-3">
+	  <h3 id="sec-1-1"><span class="section-number-3">1.1</span> RockyLinux</h3>
+	  <div class="outline-text-3" id="text-1-1">
+
+
+	  </div>
+
+	  <div id="outline-container-1-1-1" class="outline-4">
+	    <h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> whatis</h4>
+	    <div class="outline-text-4" id="text-1-1-1">
+
+	      <p>Community CentOS<br/>
+		Entreprise grade<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-1-2" class="outline-4">
+	    <h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> watch out</h4>
+	    <div class="outline-text-4" id="text-1-1-2">
+
+	      <p>1st release candidate<br/>
+	    </p></div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-1-2" class="outline-3">
+	  <h3 id="sec-1-2"><span class="section-number-3">1.2</span> OpenSuse</h3>
+	  <div class="outline-text-3" id="text-1-2">
+
+
+	  </div>
+
+	  <div id="outline-container-1-2-1" class="outline-4">
+	    <h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> why choose</h4>
+	    <div class="outline-text-4" id="text-1-2-1">
+
+	      <p>praised for its highly polished KDE <sup><a class="footref" name="fnr-.1" href="#fn-.1">1</a></sup><br/>
+		better than debian plasma on same machine (440Mo of RAM right after kde starts) <sup><a class="footref" name="fnr-.1.2" href="#fn-.1">1</a></sup><br/>
+		420Mo of RAM right after kde starts <sup><a class="footref" name="fnr-.2" href="#fn-.2">2</a></sup><br/>
+		multimedia keys recognized automatically<br/>
+		low ressource usage<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-2-2" class="outline-4">
+	    <h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> check</h4>
+	    <div class="outline-text-4" id="text-1-2-2">
+
+	      <p>if you can play all formats (avi, matroska, mp4) <sup><a class="footref" name="fnr-.1.3" href="#fn-.1">1</a></sup><br/>
+		if not, swap system packages to community repos. It should pull out the codecs.<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-2-3" class="outline-4">
+	    <h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> quirks</h4>
+	    <div class="outline-text-4" id="text-1-2-3">
+
+	      <p>kde wallet popping multiple times, too early on <sup><a class="footref" name="fnr-.2.2" href="#fn-.2">2</a></sup><br/>
+		taiwanese bookmarks in firefox <sup><a class="footref" name="fnr-.2.3" href="#fn-.2">2</a></sup> ?<br/>
+		poor font rendering (also on mabox) (possible solution <sup><a class="footref" name="fnr-.3" href="#fn-.3">3</a></sup>, or just change theme)<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-2-4" class="outline-4">
+	    <h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> problems</h4>
+	    <div class="outline-text-4" id="text-1-2-4">
+
+	      <p>many errors on package installation or update <sup><a class="footref" name="fnr-.2.4" href="#fn-.2">2</a></sup><br/>
+		package conflicts when choosing packages from the community repo <sup><a class="footref" name="fnr-.2.5" href="#fn-.2">2</a></sup><br/>
+		video playback is a mess <sup><a class="footref" name="fnr-.2.6" href="#fn-.2">2</a></sup><br/>
+		yast silenlty crashing<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-2-5" class="outline-4">
+	    <h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> links</h4>
+	    <div class="outline-text-4" id="text-1-2-5">
+
+	    </div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-1-3" class="outline-3">
+	  <h3 id="sec-1-3"><span class="section-number-3">1.3</span> OpenIndiana</h3>
+	  <div class="outline-text-3" id="text-1-3">
+
+
+	  </div>
+
+	  <div id="outline-container-1-3-1" class="outline-4">
+	    <h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> whatis</h4>
+	    <div class="outline-text-4" id="text-1-3-1">
+
+	      <p>Continuation of OpenSolaris after Oracle dropped it.<br/>
+		Somehow linked to illumos.<br/>
+		Illumos is the opearting system, OpenIndiana is an Illumos distro for desktops while OmniOS is for servers. See <sup><a class="footref" name="fnr-.1.4" href="#fn-.1">1</a></sup><br/>
+		Illumos is a Unix operating system.<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-3-2" class="outline-4">
+	    <h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> community</h4>
+	    <div class="outline-text-4" id="text-1-3-2">
+
+	      <p>IRC channel : 60 nicks<br/>
+		Mailing List : <br/>
+	      </p><ul>
+		<li>40 messages / day (1st May)<br/>
+		</li>
+		<li>230 messages / month (April)<br/>
+		</li>
+		<li>main contrib : Reginald Beardsley<br/>
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-1-3-3" class="outline-4">
+	    <h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> features <sup><a class="footref" name="fnr-.3.2" href="#fn-.3">3</a></sup></h4>
+	    <div class="outline-text-4" id="text-1-3-3">
+
+	      <ul>
+		<li>Dtrace <sup><a class="footref" name="fnr-.1.5" href="#fn-.1">1</a></sup><br/>
+		</li>
+		<li>open-zfs <sup><a class="footref" name="fnr-.2.7" href="#fn-.2">2</a></sup><sup>, </sup><sup><a class="footref" name="fnr-.4" href="#fn-.4">4</a></sup> and time-slider <sup><a class="footref" name="fnr-.5" href="#fn-.5">5</a></sup><br/>
+		</li>
+		<li>zones (application containers)<br/>
+		</li>
+		<li>Service Management Facility (SMF)<br/>
+		</li>
+		<li>ipfilter<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-1-3-4" class="outline-4">
+	    <h4 id="sec-1-3-4"><span class="section-number-4">1.3.4</span> criticismes</h4>
+	    <div class="outline-text-4" id="text-1-3-4">
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-1-3-5" class="outline-4">
+	    <h4 id="sec-1-3-5"><span class="section-number-4">1.3.5</span> watch out for</h4>
+	    <div class="outline-text-4" id="text-1-3-5">
+
+	      <p>lack of documentation, but there's a wiki <sup><a class="footref" name="fnr-.1.6" href="#fn-.1">1</a></sup> and ML archives <sup><a class="footref" name="fnr-.2.8" href="#fn-.2">2</a></sup>.<br/>
+		firefox very old <sup><a class="footref" name="fnr-.3.3" href="#fn-.3">3</a></sup><br/>
+		no graphical package manager <sup><a class="footref" name="fnr-.3.4" href="#fn-.3">3</a></sup><br/>
+		Rolling Release isn't properly finished <sup><a class="footref" name="fnr-.5.2" href="#fn-.5">5</a></sup>; failed to boot after install (Non-system disk or disk error)<br/>
+		It's a rolling release distro<sup><a class="footref" name="fnr-.4.2" href="#fn-.4">4</a></sup>, even if website claims only hipster is RR. OmniOS is supposedly more stable release model but you'd be on your own with a DE there. <sup><a class="footref" name="fnr-.4.3" href="#fn-.4">4</a></sup><br/>
+	    </p></div>
+	  </div>
+	</div>
+
+      </div>
+
+      <div id="outline-container-2" class="outline-2">
+	<h2 id="sec-2"><span class="section-number-2">2</span> tried</h2>
+	<div class="outline-text-2" id="text-2">
+
+
+	</div>
+
+	<div id="outline-container-2-1" class="outline-3">
+	  <h3 id="sec-2-1"><span class="section-number-3">2.1</span> Mabox</h3>
+	  <div class="outline-text-3" id="text-2-1">
+
+
+	  </div>
+
+	  <div id="outline-container-2-1-1" class="outline-4">
+	    <h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> appraisals</h4>
+	    <div class="outline-text-4" id="text-2-1-1">
+
+	      <p>9.4 / 10 sur distrowatch !<br/>
+		napcok shares useful bash scripts and tips on the forums<br/>
+		blazing fast, very light<br/>
+		lots of configuration helpers <br/>
+		great community with quick answers<br/>
+		move from mint to mabox, charmed<br/>
+		quick install (10-15min), faster boot times than debian testing<br/>
+		main dev is very friendly and active on the forum<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-2-1-2" class="outline-4">
+	    <h4 id="sec-2-1-2"><span class="section-number-4">2.1.2</span> whatis</h4>
+	    <div class="outline-text-4" id="text-2-1-2">
+
+	      <p>manjaro with openbox<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-2-1-3" class="outline-4">
+	    <h4 id="sec-2-1-3"><span class="section-number-4">2.1.3</span> features</h4>
+	    <div class="outline-text-4" id="text-2-1-3">
+
+	      <p>yay : yet another yaourt (package management from the cmdline)<br/>
+		ya isn't mabox specific<br/>
+		yaourt is for AUR <br/>
+		AUR is user repos<br/>
+		you can have multiple kernels in case something goes wrong<br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-2-1-4" class="outline-4">
+	    <h4 id="sec-2-1-4"><span class="section-number-4">2.1.4</span> watch out for</h4>
+	    <div class="outline-text-4" id="text-2-1-4">
+
+	      <p>updates : <br/>
+		read manjaro forums first<br/>
+		<a href="https://forum.manjaro.org/">https://forum.manjaro.org/</a><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-2-1-5" class="outline-4">
+	    <h4 id="sec-2-1-5"><span class="section-number-4">2.1.5</span> problems</h4>
+	    <div class="outline-text-4" id="text-2-1-5">
+
+	      <p>like all RRs : <br/>
+	      </p>
+	      <p><br/>
+	      </p><ul>
+		<li>tu manques un update, tu casses tout au prochain <sup><a class="footref" name="fnr-.1.7" href="#fn-.1">1</a></sup><br/>
+		</li>
+		<li>tu ne peux pas installer un truc si le système n'est pas à jour<br/>
+		</li>
+		<li>avant de mettre à jour tu dois lire les release notes. Si un paquet pose problème, post-pone, et en attendant tu ne peux rien installer.<br/>
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	      </p>
+	      <p><br/>
+		See also infos.txt &gt; linux distros &gt; rolling releases<br/>
+	    </p></div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-2-2" class="outline-3">
+	  <h3 id="sec-2-2"><span class="section-number-3">2.2</span> Linux Lite</h3>
+	  <div class="outline-text-3" id="text-2-2">
+
+	    <ul>
+	      <li>No specific feature<br/>
+	      </li>
+	      <li>It just works, everything is simpler to use than other distros<br/>
+	      </li>
+	      <li>Everything is easy to find, no surprises.<br/>
+	      </li>
+	      <li>Smoother<br/>
+	      </li>
+	      <li>More bugs than xubuntu<br/>
+	      </li>
+	      <li>Can't register to the forum with yahoo mail<br/>
+	      </li>
+	      <li>Voir mes notes manuscrites p170<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-2-3" class="outline-3">
+	  <h3 id="sec-2-3"><span class="section-number-3">2.3</span> Kubuntu</h3>
+	  <div class="outline-text-3" id="text-2-3">
+
+
+	  </div>
+
+	  <div id="outline-container-2-3-1" class="outline-4">
+	    <h4 id="sec-2-3-1"><span class="section-number-4">2.3.1</span> plus</h4>
+	    <div class="outline-text-4" id="text-2-3-1">
+
+	      <ul>
+		<li>plus efficace que Linux Mint<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-2-3-2" class="outline-4">
+	    <h4 id="sec-2-3-2"><span class="section-number-4">2.3.2</span> criticismes</h4>
+	    <div class="outline-text-4" id="text-2-3-2">
+
+	      <ul>
+		<li>mais KDE semble plus buggé<br/>
+		  <ul>
+		    <li>Alt-F1 qui est lié avec la touche windows et qui me lance application launcher<br/>
+		    </li>
+		    <li>les définitions de keyboard shortcuts qui sautent après un reboot<br/>
+		    </li>
+		    <li>Windows-D qui ne lance pas dolphin, les autres raccourcis marchent bien<br/>
+		    </li>
+		    <li>PrnScrn qui ne lance pas spectacle<br/>
+		    </li>
+		    <li>Ctrl+Entrée ne valide plus l'entrée de wachyadoin<br/>
+		    </li>
+		    <li>plantages de temps en temps<br/>
+		    </li>
+		  </ul>
+
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	    </p></div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-2-4" class="outline-3">
+	  <h3 id="sec-2-4"><span class="section-number-3">2.4</span> Linux Mint</h3>
+	  <div class="outline-text-3" id="text-2-4">
+
+
+	  </div>
+
+	  <div id="outline-container-2-4-1" class="outline-4">
+	    <h4 id="sec-2-4-1"><span class="section-number-4">2.4.1</span> Features</h4>
+	    <div class="outline-text-4" id="text-2-4-1">
+
+	      <ul>
+		<li>uses Cinnamon which is a fork of gnome 3<br/>
+		</li>
+		<li>timeshift installed by default.  <br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-2-4-2" class="outline-4">
+	    <h4 id="sec-2-4-2"><span class="section-number-4">2.4.2</span> Acclaims</h4>
+	    <div class="outline-text-4" id="text-2-4-2">
+
+	      <ul>
+		<li>use of ureadahead speeds up the boot process on HDD.<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-2-4-3" class="outline-4">
+	    <h4 id="sec-2-4-3"><span class="section-number-4">2.4.3</span> Criticismes</h4>
+	    <div class="outline-text-4" id="text-2-4-3">
+
+	      <ul>
+		<li>inferior to kubuntu  <br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-2-4-4" class="outline-4">
+	    <h4 id="sec-2-4-4"><span class="section-number-4">2.4.4</span> Misc</h4>
+	    <div class="outline-text-4" id="text-2-4-4">
+
+	      <ul>
+		<li>you should change the I/O scheduler from CFQ to deadline.<br/>
+		</li>
+		<li>if you have nvidia, you should disable vsync, this will put the workload on the GPU. Sinon remettre vsync si c'est moins bien.<br/>
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	    </p></div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-2-5" class="outline-3">
+	  <h3 id="sec-2-5"><span class="section-number-3">2.5</span> KDE Neon</h3>
+	  <div class="outline-text-3" id="text-2-5">
+
+	    <ul>
+	      <li>Test the latest KDE<br/>
+	      </li>
+	      <li>You also have Kubuntu<br/>
+	      </li>
+	      <li>Reason to choose : latest KDE desktop environement (plasma)<br/>
+	      </li>
+	      <li>support via forum or IRC<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	      Review :<br/>
+	    </p><ul>
+	      <li>Media control forward/backward (keyboard shortcuts) seem to stop at an arbitrary position in the playlist.<br/>
+	      </li>
+	      <li>Media control pause/play doesn't always work<br/>
+	      </li>
+	      <li>dbus controls don't always work.<br/>
+		<ul>
+		  <li>pas de réponse, comme d'hab, sur les forums KDE.<br/>
+		  </li>
+		  <li>mysql mal installé<br/>
+		  </li>
+		  <li>mysql + mariadb, que choisir ?<br/>
+		  </li>
+		  <li>mysql ne démarre pas (erreur /var/lib/mysql n'existe pas, c'est /var/lib/mysql-files qui existe)<br/>
+		  </li>
+		  <li>tchecktchoukha berrommane.<br/>
+		  </li>
+		</ul>
+
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-2-6" class="outline-3">
+	  <h3 id="sec-2-6"><span class="section-number-3">2.6</span> NuTyX GNU/Linux</h3>
+	  <div class="outline-text-3" id="text-2-6">
+
+	    <ul>
+	      <li>based off lsf and beyond lsf<br/>
+	      </li>
+	      <li>custom "cards" package manager<br/>
+	      </li>
+	      <li>see NuTyX entry in infos.txt<br/>
+	      </li>
+	      <li>la version fixe ne vie que 3 mois max, la RR 1 an.<br/>
+	      </li>
+	      <li>quand on casse le système, on reviens à la base et on réinstall tout<br/>
+	      </li>
+	      <li>selon fanch`sur #nutyx, ça prend quelques minutes de tout réinstaller.<br/>
+	      </li>
+	      <li>mais il n'a pas voulu en dire plus et m'a dit que si j'hésitais je devais passer mon chemin;<br/>
+	      </li>
+	      <li>enfin, j'ai installé nutyx mais grub n'arrive pas à le booter&hellip; et l'assistance sur les forums fait défaut.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-2-7" class="outline-3">
+	  <h3 id="sec-2-7"><span class="section-number-3">2.7</span> Elementary OS</h3>
+	  <div class="outline-text-3" id="text-2-7">
+
+	    <ul>
+	      <li>Pantehon DE<br/>
+	      </li>
+	      <li>many in-house apps<br/>
+	      </li>
+	      <li>the least customizable distro<br/>
+	      </li>
+	      <li>some bugs (screen-saver, date in arabic, screen-saver lock down)<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-2-8" class="outline-3">
+	  <h3 id="sec-2-8"><span class="section-number-3">2.8</span> Netrunner</h3>
+	  <div class="outline-text-3" id="text-2-8">
+
+	    <ul>
+	      <li>Debian (stable), Manjaro (RR)<br/>
+	      </li>
+	      <li>Heavily tweaked KDE<br/>
+	      </li>
+	      <li>Very nice UI<br/>
+	      </li>
+	      <li>Octopi / Discover : two package managers. Octopi for arch-based netrunner (RR). Oktopi &lt;- octpi chakra.<br/>
+		<ul>
+		  <li>Octopi : powerfull pacman gui frontend. Netrunner RR uniquement.<br/>
+		  </li>
+		  <li>Discover : lien avec muon (KDE) et plasma (plasma discover). Very nice.<br/>
+		  </li>
+		</ul>
+
+	      </li>
+	      <li>No IRC support, only forum<br/>
+	      </li>
+	      <li>Readme is a 404<br/>
+	      </li>
+	      <li>Thoroughly enjoyed by jesse smith @ distrowatch. <br/>
+	      </li>
+	      <li>Worth a try ? <br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-2-9" class="outline-3">
+	  <h3 id="sec-2-9"><span class="section-number-3">2.9</span> MX Linux :</h3>
+	  <div class="outline-text-3" id="text-2-9">
+
+	    <ul>
+	      <li>the package manager (MX Package Installer) also searches flatpacks<br/>
+	      </li>
+	      <li>DE = xfce, considered mid-weight. <br/>
+	      </li>
+	      <li>Programs launch quickly<br/>
+	      </li>
+	      <li>Default prompt is on two lines :)<br/>
+	      </li>
+	      <li>mx-tools save time for some usual tasks like installing codecs or installing flash support.<br/>
+	      </li>
+	      <li>much smaller, much faster than fedora/opensuse<br/>
+	      </li>
+	      <li>lacks proper documentation<br/>
+
+		<p><br/>
+	      </p></li>
+	      <li>Un gros avantage de la version live avec persistance est qu'à chaque fois qu'on installe une nouvelle app, c'est mis dans la clé USB. <br/>
+		<ul>
+		  <li>Ainsi, lorsqu'on change d'endroit, on peut emmener notre clé avec nous et tout y est.<br/>
+		  </li>
+		  <li>Même lorsque l'OS est pété on a une sauvegarde sur l'USB.<br/>
+
+		    <p><br/>
+		  </p></li>
+		</ul>
+
+	      </li>
+	      <li>systemd recalcitrant. Uses sysvinit<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-2-10" class="outline-3">
+	  <h3 id="sec-2-10"><span class="section-number-3">2.10</span> Deepin</h3>
+	  <div class="outline-text-3" id="text-2-10">
+
+	    <ul>
+	      <li>Has its own DE based off Qt5 called DDE (deepin desktop env)<br/>
+	      </li>
+	      <li>Develops its own software too (dmusic, dplayer, deepin software center, deepin image viewer, deepin screen capture, deepin voice recorder&hellip;)<br/>
+	      </li>
+	      <li>why not trust a chinese distro when you already trust chinese hardware ? <br/>
+	      </li>
+	      <li>no support for btrfs<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+	</div>
+
+      </div>
+
+      <div id="outline-container-3" class="outline-2">
+	<h2 id="sec-3"><span class="section-number-2">3</span> Won't try</h2>
+	<div class="outline-text-2" id="text-3">
+
+
+	  <p><br/>
+	    ##### /    ##   ###<br/>
+	    ######  /  #####    ###<br/>
+	    /#   /  /     #####   ###                             #            #<br/>
+	    /    /  ##     # ##      ##                           ##           ##<br/>
+	    /  ###     #         ##                           ##           ##<br/>
+	    ##   ##     #         ##    <i>###   ###  /###     ########     ######## ###  /###   ##   ####    ##   ##     #         ##   / ###  / ###</i> #### / ########     ########   ###/ #### / ##    ###  /<br/>
+	    ##   ##     #         ##  /   ###/   ##   ###/     ##           ##       ##   ###/  ##     ###/<br/>
+	    ##   ##     #         ## ##    ##    ##    ##      ##           ##       ##         ##      ##<br/>
+	    ##   ##     #         ## ##    ##    ##    ##      ##           ##       ##         ##      ##<br/>
+	    ##  ##     #         ## ##    ##    ##    ##      ##           ##       ##         ##      ##<br/>
+	    ## #      #         /  ##    ##    ##    ##      ##           ##       ##         ##      ##<br/>
+	    ###      <i>##      /   ##    ##    ##    ##      ##           ##       ##         ##      ##        #######</i> #######/     ######     ###   ###     ##           ##       ###         #########<br/>
+            ####     ####        ####       ###   ###     ##           ##       ###          #### ###<br/>
+            ###<br/>
+            #####   ###<br/>
+            <i>#######  /#                                                                                       /      ###</i><br/>
+	  </p>
+	  <p><br/>
+	  </p>
+	  <p><br/>
+	  </p>
+	  <p><br/>
+	  </p>
+	</div>
+
+	<div id="outline-container-3-1" class="outline-3">
+	  <h3 id="sec-3-1"><span class="section-number-3">3.1</span> Rebornos</h3>
+	  <div class="outline-text-3" id="text-3-1">
+
+
+	  </div>
+
+	  <div id="outline-container-3-1-1" class="outline-4">
+	    <h4 id="sec-3-1-1"><span class="section-number-4">3.1.1</span> gle</h4>
+	    <div class="outline-text-4" id="text-3-1-1">
+
+	      <p>revival of antegros<br/>
+		based off arch<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-1-2" class="outline-4">
+	    <h4 id="sec-3-1-2"><span class="section-number-4">3.1.2</span> features</h4>
+	    <div class="outline-text-4" id="text-3-1-2">
+
+	      <p>possibilité de rollback [?]<br/>
+		own installer (cnchi, fenix)<br/>
+		5.11 kernel (devuan is still 4.19 as of 2021-04-27)<br/>
+		Wayland<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-1-3" class="outline-4">
+	    <h4 id="sec-3-1-3"><span class="section-number-4">3.1.3</span> criticisme</h4>
+	    <div class="outline-text-4" id="text-3-1-3">
+
+	      <p>2Go install pour rien puisqu'il télécharge les updates de toutes façons.<br/>
+		400Mo d'update right after install<br/>
+		5Go à télécharger en tout pour avoir les dernières mises à jour (RR)<br/>
+		650 Mo de RAM utilisé (plasma)<br/>
+		we need to wait for arch to make fixes <sup><a class="footref" name="fnr-.1.8" href="#fn-.1">1</a></sup><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-1-4" class="outline-4">
+	    <h4 id="sec-3-1-4"><span class="section-number-4">3.1.4</span> appraisal</h4>
+	    <div class="outline-text-4" id="text-3-1-4">
+
+	      <p>meilleur que endeavour os<br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-1-5" class="outline-4">
+	    <h4 id="sec-3-1-5"><span class="section-number-4">3.1.5</span> community</h4>
+	    <div class="outline-text-4" id="text-3-1-5">
+
+	      <p>27 personnes sur le discord<br/>
+		forum discourse plutôt responsif<br/>
+	    </p></div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-2" class="outline-3">
+	  <h3 id="sec-3-2"><span class="section-number-3">3.2</span> Qubes OS</h3>
+	  <div class="outline-text-3" id="text-3-2">
+
+	    <ul>
+	      <li>Each app is launched in its own temporary VM that gets destroyed after<br/>
+	      </li>
+	      <li>Each window from different VMs has its own color<br/>
+	      </li>
+	      <li>You can have Template VMs, App VMs (temporary) and Standalone VMs (persistent)<br/>
+	      </li>
+	      <li>You can have vaults (VMs with no NIC)<br/>
+	      </li>
+	      <li>Qubes OS has a thunderbird plugin to open attachments in disposable VMs<br/>
+	      </li>
+	      <li>The VMs start quickly<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-3" class="outline-3">
+	  <h3 id="sec-3-3"><span class="section-number-3">3.3</span> Devuan</h3>
+	  <div class="outline-text-3" id="text-3-3">
+
+
+	  </div>
+
+	  <div id="outline-container-3-3-1" class="outline-4">
+	    <h4 id="sec-3-3-1"><span class="section-number-4">3.3.1</span> Features</h4>
+	    <div class="outline-text-4" id="text-3-3-1">
+
+	      <ul>
+		<li>OpenRC (gentoo) / sysvinit instead of systemd.<br/>
+		</li>
+		<li>presumabely faster than debian.<br/>
+		</li>
+		<li>XFCE, 200M of RAM. 3.5 Gb of Disk.<br/>
+		</li>
+		<li>eudev as default device manager instead of udev (part of systemd)<br/>
+		</li>
+		<li>Le problème n'est pas <b>que</b> pour l'init, mais tout systemd <br/>
+		</li>
+		<li>ceci inclut libsystemd0, dont dépend gvfs-daemon par exemple<br/>
+		</li>
+		<li>gvfs-daemon &lt;- corbeille du bureau, notification quand on insert une clé USB<br/>
+		</li>
+		<li>GNOME bug beaucoup sans systemd sur OpenBSD.<br/>
+		</li>
+		<li>Borrowing from gentoo (eudev, elogind)<br/>
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-3-2" class="outline-4">
+	    <h4 id="sec-3-3-2"><span class="section-number-4">3.3.2</span> Criticismes</h4>
+	    <div class="outline-text-4" id="text-3-3-2">
+
+	      <ul>
+		<li>Mal fini, bricolage, rafistolage d'outils.<br/>
+		</li>
+		<li>why devuan when we already have AntiX and MX ?<br/>
+		  <ul>
+		    <li>AntiX has managed to produce a systemd-free distro that works<br/>
+		    </li>
+		    <li>Devuan has been trying for two years and didn't produce much<br/>
+		    </li>
+		    <li>AntiX had multiple releases in the same span<br/>
+		    </li>
+		  </ul>
+
+		</li>
+		<li>Beta pendant 2 ans&hellip;<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-3-3" class="outline-4">
+	    <h4 id="sec-3-3-3"><span class="section-number-4">3.3.3</span> Acclaims</h4>
+	    <div class="outline-text-4" id="text-3-3-3">
+
+	      <ul>
+		<li>10/10, presque tout le monde aime. A voir si c'est par haine de systemd.<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-3-4" class="outline-4">
+	    <h4 id="sec-3-3-4"><span class="section-number-4">3.3.4</span> Community</h4>
+	    <div class="outline-text-4" id="text-3-3-4">
+
+	      <ul>
+		<li>communauté de quinqua et sexagénaires.<br/>
+		</li>
+		<li>260 personnes sur #devuan<br/>
+		</li>
+		<li>a little arrogance on the forums <sup><a class="footref" name="fnr-.1.9" href="#fn-.1">1</a></sup><br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-3-5" class="outline-4">
+	    <h4 id="sec-3-3-5"><span class="section-number-4">3.3.5</span> misc</h4>
+	    <div class="outline-text-4" id="text-3-3-5">
+
+	      <ul>
+		<li>zsh more programmer friendly than bash<br/>
+		</li>
+		<li>other possible init systems : <br/>
+		  <ul>
+		    <li>openrc (gentoo, hyperbola, artix)<br/>
+		    </li>
+		    <li>sinit <br/>
+		    </li>
+		    <li>runit (voidlinux, artix)<br/>
+		    </li>
+		    <li>s6 (obarun linux)<br/>
+		    </li>
+		    <li>shephered <br/>
+		    </li>
+		  </ul>
+
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-3-6" class="outline-4">
+	    <h4 id="sec-3-3-6"><span class="section-number-4">3.3.6</span> Autres distros n'utilisant pas systemd</h4>
+	    <div class="outline-text-4" id="text-3-3-6">
+
+	      <ul>
+		<li>AntiX<br/>
+		</li>
+		<li>MX<br/>
+		</li>
+		<li>slackware<br/>
+		</li>
+		<li>gentoo<br/>
+		</li>
+		<li>Autres distros DEBIAN n'utilisant pas systemd : <br/>
+		  <ul>
+		    <li>AntiX<br/>
+		    </li>
+		    <li>MX<br/>
+		    </li>
+		  </ul>
+
+		</li>
+	      </ul>
+
+	    </div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-4" class="outline-3">
+	  <h3 id="sec-3-4"><span class="section-number-3">3.4</span> 4MLinux</h3>
+	  <div class="outline-text-3" id="text-3-4">
+
+	    <ul>
+	      <li>Une fois en ligne, le système prend 160M de RAM.<br/>
+	      </li>
+	      <li>Certains scripts shell pour des outils de maintenance qu'on ne trouve pas ailleurs.<br/>
+	      </li>
+	      <li>Why install wine for supertux ? <br/>
+	      </li>
+	      <li>Too many errors when installing new software.<br/>
+	      </li>
+	      <li>Custom WM (JVM + feh + PacManFM)<br/>
+	      </li>
+	      <li>paypal to download :( <br/>
+	      </li>
+	      <li>No package manager ! you need to install software from source yourself.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-5" class="outline-3">
+	  <h3 id="sec-3-5"><span class="section-number-3">3.5</span> OpenMandriva</h3>
+	  <div class="outline-text-3" id="text-3-5">
+
+
+	  </div>
+
+	  <div id="outline-container-3-5-1" class="outline-4">
+	    <h4 id="sec-3-5-1"><span class="section-number-4">3.5.1</span> Features</h4>
+	    <div class="outline-text-4" id="text-3-5-1">
+
+	      <ul>
+		<li>OpenMandriva Control Center<br/>
+		</li>
+		<li>dfn package manager (mageia aussi)<br/>
+		</li>
+		<li>dfndragora (mageia aussi)<br/>
+		</li>
+		<li>utilisation de clang au lieu de gcc<br/>
+		</li>
+		<li>utilisation d'aria et rpm en sous-marin pour la gestion des paquets ? (2016, source : <a href="https://www.mageialinux-online.org/forum/topic-22636-1+openmandriva-lx-3-0-un-fork-communautaire-qui-ne-sert-a-rien.php#m218072">https://www.mageialinux-online.org/forum/topic-22636-1+openmandriva-lx-3-0-un-fork-communautaire-qui-ne-sert-a-rien.php#m218072</a>)<br/>
+		</li>
+		<li>kahnia to test the latest packages from the automatic build farm (abf.openmandriva.com)<br/>
+		</li>
+		<li>automated build farm specific to openmandriva and rosa.<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-5-2" class="outline-4">
+	    <h4 id="sec-3-5-2"><span class="section-number-4">3.5.2</span> Criticismes</h4>
+	    <div class="outline-text-4" id="text-3-5-2">
+
+	      <ul>
+		<li>mageia surpassing it in terms of stability and number of packages.<br/>
+		</li>
+		<li>attention, peut être quelques bugs du à l'utilisation de LLVM Clang<br/>
+		  <ul>
+		    <li>les codes sources qui utilisent des spécificités de GNU GCC<br/>
+		    </li>
+		    <li>les codes sources qui utilisent l'asm goto spécifique à GCC<br/>
+		    </li>
+		    <li>les codes sources qui ne font pas cas des autres compilateurs.<br/>
+		    </li>
+		  </ul>
+
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-5-3" class="outline-4">
+	    <h4 id="sec-3-5-3"><span class="section-number-4">3.5.3</span> Community</h4>
+	    <div class="outline-text-4" id="text-3-5-3">
+
+	      <ul>
+		<li>Mandriva business basée sur Mageia, Mandriva desktop basée sur OpenMandriva, elle-même basée sur ROSA (source : <a href="https://genius.it/www.mageialinux-online.org/forum/topic-16668-2+votre-avis-sur-openmandriva-e.php">https://genius.it/www.mageialinux-online.org/forum/topic-16668-2+votre-avis-sur-openmandriva-e.php</a>)<br/>
+		</li>
+		<li>fork de ROSA, le mandriva russe<br/>
+		</li>
+		<li>28 people in the IRC channel<br/>
+		</li>
+		<li>Version communautaire de Mandriva<br/>
+		</li>
+		<li>46 on #mageia<br/>
+		</li>
+		<li>pas de réponse sur linuxquestions.org<br/>
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	    </p></div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-6" class="outline-3">
+	  <h3 id="sec-3-6"><span class="section-number-3">3.6</span> SparkyLinux</h3>
+	  <div class="outline-text-3" id="text-3-6">
+
+
+	  </div>
+
+	  <div id="outline-container-3-6-1" class="outline-4">
+	    <h4 id="sec-3-6-1"><span class="section-number-4">3.6.1</span> Acclaims</h4>
+	    <div class="outline-text-4" id="text-3-6-1">
+
+	      <ul>
+		<li>very good reviews<br/>
+		</li>
+		<li>rated 27th on distrowatch<br/>
+		</li>
+		<li>8.3/10 sur DW<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-6-2" class="outline-4">
+	    <h4 id="sec-3-6-2"><span class="section-number-4">3.6.2</span> Features</h4>
+	    <div class="outline-text-4" id="text-3-6-2">
+
+	      <ul>
+		<li>generalist<br/>
+		</li>
+		<li>changes are persistent<br/>
+		</li>
+		<li>semi-rolling<br/>
+		</li>
+		<li>install any DE/WM<br/>
+		</li>
+		<li>APTus, let you install software not present in debian repos [Q]<br/>
+		</li>
+		<li>APTus is just another front-end to APT<br/>
+		</li>
+		<li>APTus extra (installation de codecs [u])<br/>
+		</li>
+		<li>Sparky Center<br/>
+		</li>
+	      </ul>
+
+
+	      <p><br/>
+	    </p></div>
+
+	  </div>
+
+	  <div id="outline-container-3-6-3" class="outline-4">
+	    <h4 id="sec-3-6-3"><span class="section-number-4">3.6.3</span> Criticismes</h4>
+	    <div class="outline-text-4" id="text-3-6-3">
+
+	      <ul>
+		<li>rolling<br/>
+		</li>
+		<li>some reported it to be buggy and slow on many occasions. <br/>
+		</li>
+		<li>inferior to MX Linux (2 reviews)<br/>
+		</li>
+		<li>bugs when you try to customize it <br/>
+		</li>
+		<li>errors on install or post-install<br/>
+		</li>
+		<li>only works with XFCE, MATE and KDE have lots of glitches which are hard to fix<br/>
+		</li>
+	      </ul>
+
+	    </div>
+
+	  </div>
+
+	  <div id="outline-container-3-6-4" class="outline-4">
+	    <h4 id="sec-3-6-4"><span class="section-number-4">3.6.4</span> Community</h4>
+	    <div class="outline-text-4" id="text-3-6-4">
+
+	      <ul>
+		<li>ils sont 5 sur le salon IRC.<br/>
+		</li>
+	      </ul>
+
+	    </div>
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-7" class="outline-3">
+	  <h3 id="sec-3-7"><span class="section-number-3">3.7</span> Oracle</h3>
+	  <div class="outline-text-3" id="text-3-7">
+
+	    <ul>
+	      <li>Stable<br/>
+	      </li>
+	      <li>good memory management<br/>
+	      </li>
+	      <li>XFS the default.<br/>
+	      </li>
+	      <li>update the kernel w/o rebooting (ksplice technology) (comes w/ a price)<br/>
+	      </li>
+	      <li>DTrace ready.<br/>
+	      </li>
+	      <li>Support lacking/unexistant for non paying users.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p>  <br/>
+	    </p>
+	    <p><br/>
+	      see : <a href="https://www.trustradius.com/products/oracle-linux/reviews">https://www.trustradius.com/products/oracle-linux/reviews</a><br/>
+	    </p>
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-8" class="outline-3">
+	  <h3 id="sec-3-8"><span class="section-number-3">3.8</span> PCLinuxOS</h3>
+	  <div class="outline-text-3" id="text-3-8">
+
+	    <ul>
+	      <li>outstanding support<br/>
+	      </li>
+	      <li>9 personnes sur IRC<br/>
+
+		<p><br/>
+	      </p></li>
+	      <li>LxQT can't be installed alone, you must install apps with it, presumably.<br/>
+		<ul>
+		  <li>and once you do, you can't remove the excess apps (music players etc.)<br/>
+		  </li>
+		</ul>
+
+	      </li>
+	      <li>RR<br/>
+	      </li>
+	      <li>forum registration is closed and is a manual process (mail the admin)<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-9" class="outline-3">
+	  <h3 id="sec-3-9"><span class="section-number-3">3.9</span> Fedora</h3>
+	  <div class="outline-text-3" id="text-3-9">
+
+	    <ul>
+	      <li>some bugs and freezes.<br/>
+	      </li>
+	      <li>too much bugs (deidomedo)<br/>
+	      </li>
+	      <li>some people report slowliness<br/>
+	      </li>
+	      <li>c'est fou, nobody cares about KDE (aucune réponse <a href="https://forums.fedoraforum.org/showthread.php?207198-Konsole-enabling-or-disabling-Ctrl-S-Ctrl-Q">https://forums.fedoraforum.org/showthread.php?207198-Konsole-enabling-or-disabling-Ctrl-S-Ctrl-Q</a>)<br/>
+	      </li>
+	      <li>used by Linus Torvalds (really ?)<br/>
+	      </li>
+	      <li>RHEL branches from Fedora<br/>
+	      </li>
+	      <li>kernel.org runs on fedora<br/>
+	      </li>
+	      <li>dnf package manager.<br/>
+	      </li>
+	      <li>around 1.2 million users.<br/>
+	      </li>
+	      <li>flawless upgrades.<br/>
+	      </li>
+	      <li>Wayland (no X)<br/>
+	      </li>
+	      <li>Core values : 4Fs : Friends First, Features and Freedom <br/>
+
+		<p><br/>
+	      </p></li>
+	      <li>sliverblue ? os is freezed, no dfn, only install via flatpacks or toolbox.<br/>
+		<ul>
+		  <li>toolbox    : used to install CLI software<br/>
+		  </li>
+		  <li>flatpacks  : used to install GUI software<br/>
+		  </li>
+		  <li>rpm-ostree : used to upgrade the system<br/>
+		  </li>
+		  <li>any changes with rpm-ostree will generate a new bootable image. <br/>
+		  </li>
+		  <li>if you're not happy with the new image you can always revert back to previous image which is shown in the grub menu.<br/>
+		  </li>
+		  <li>so instead of having a new menu entry for new kernel only, you have a new image each time you deeply change the system.<br/>
+		  </li>
+		  <li>you don't create new images for flatpacks because they're not involved with the system.<br/>
+
+		    <p><br/>
+		  </p></li>
+		</ul>
+
+	      </li>
+	      <li>release notes w/ clear instructions and very few things to touch (if ever using a specific configuration)<br/>
+	      </li>
+	      <li>776 personnes sur IRC.<br/>
+	      </li>
+	      <li>96 personnes sur #silverblue<br/>
+
+		<p><br/>
+	      </p></li>
+	      <li>IT WILL FORMAT THE WHOLE DISK ! <br/>
+		<ul>
+		  <li>"Note: it is advisable to keep the default partitioning setup that the Installer suggests, since rpm-ostree expects this setup."<br/>
+		  </li>
+		  <li>from <a href="https://silverblue.fedoraproject.org/download">https://silverblue.fedoraproject.org/download</a><br/>
+		  </li>
+		</ul>
+
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-10" class="outline-3">
+	  <h3 id="sec-3-10"><span class="section-number-3">3.10</span> Emmabuntus</h3>
+	  <div class="outline-text-3" id="text-3-10">
+
+	    <ul>
+	      <li>no special feature.<br/>
+	      </li>
+	      <li>why don't you use debian or ubuntu ?<br/>
+	      </li>
+	      <li>
+		<p><br/>
+	      </p></li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-11" class="outline-3">
+	  <h3 id="sec-3-11"><span class="section-number-3">3.11</span> Paldo</h3>
+	  <div class="outline-text-3" id="text-3-11">
+
+	    <ul>
+	      <li>non-existing documentation<br/>
+	      </li>
+	      <li>non-existing community<br/>
+	      </li>
+	      <li>very calm forum<br/>
+	      </li>
+	      <li>forum registration requires moderation.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-12" class="outline-3">
+	  <h3 id="sec-3-12"><span class="section-number-3">3.12</span> Zentyal</h3>
+	  <div class="outline-text-3" id="text-3-12">
+
+	    <ul>
+	      <li>network-centric (gateways)<br/>
+	      </li>
+	      <li>offers a custom webmin-like web-ui.<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-13" class="outline-3">
+	  <h3 id="sec-3-13"><span class="section-number-3">3.13</span> SpringDale Linux</h3>
+	  <div class="outline-text-3" id="text-3-13">
+
+	    <ul>
+	      <li>just a redhat clone, like CentOS, maintained by princeton university computing staff.<br/>
+	      </li>
+	      <li>some bugs opened for years, no comments, no follow ups.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-14" class="outline-3">
+	  <h3 id="sec-3-14"><span class="section-number-3">3.14</span> SmartOS</h3>
+	  <div class="outline-text-3" id="text-3-14">
+
+	    <ul>
+	      <li>This is specialized for virtualization/containerization.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-15" class="outline-3">
+	  <h3 id="sec-3-15"><span class="section-number-3">3.15</span> NetBSD</h3>
+	  <div class="outline-text-3" id="text-3-15">
+
+	    <ul>
+	      <li>isn't suited for desktop (bad review on distrowatch)<br/>
+	      </li>
+	      <li>meagre documentation<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-16" class="outline-3">
+	  <h3 id="sec-3-16"><span class="section-number-3">3.16</span> ExTix</h3>
+	  <div class="outline-text-3" id="text-3-16">
+
+	    <ul>
+	      <li>Bad user reviews<br/>
+	      </li>
+	      <li>Bugs<br/>
+	      </li>
+	      <li>Nothing particular<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-17" class="outline-3">
+	  <h3 id="sec-3-17"><span class="section-number-3">3.17</span> Hanthana</h3>
+	  <div class="outline-text-3" id="text-3-17">
+
+	    <ul>
+	      <li>Current version : 30. Versions in the forums : 17.<br/>
+	      </li>
+	      <li>Ghost forum<br/>
+	      </li>
+	      <li>Forum registration doesn't seem to work.<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-18" class="outline-3">
+	  <h3 id="sec-3-18"><span class="section-number-3">3.18</span> Runtu</h3>
+	  <div class="outline-text-3" id="text-3-18">
+
+	    <ul>
+	      <li>exclusively in russian<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-19" class="outline-3">
+	  <h3 id="sec-3-19"><span class="section-number-3">3.19</span> BlackPanther OS</h3>
+	  <div class="outline-text-3" id="text-3-19">
+
+	    <ul>
+	      <li>support via facebook only<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-20" class="outline-3">
+	  <h3 id="sec-3-20"><span class="section-number-3">3.20</span> Robolinux</h3>
+	  <div class="outline-text-3" id="text-3-20">
+
+	    <ul>
+	      <li>Support par mail, pas de forum, donc les solutions aux problèmes récurrents ne sont pas partagées<br/>
+	      </li>
+	      <li>Quelques avis négatifs sur dedomeido<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-21" class="outline-3">
+	  <h3 id="sec-3-21"><span class="section-number-3">3.21</span> Voyagerlive</h3>
+	  <div class="outline-text-3" id="text-3-21">
+
+	    <ul>
+	      <li>no doc<br/>
+	      </li>
+	      <li>support forum is closed<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-22" class="outline-3">
+	  <h3 id="sec-3-22"><span class="section-number-3">3.22</span> Fatdog Linux</h3>
+	  <div class="outline-text-3" id="text-3-22">
+
+	    <ul>
+	      <li>the default user is root<br/>
+	      </li>
+	      <li>auto-login as root<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-23" class="outline-3">
+	  <h3 id="sec-3-23"><span class="section-number-3">3.23</span> Feren OS</h3>
+	  <div class="outline-text-3" id="text-3-23">
+
+	    <ul>
+	      <li>RR<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-24" class="outline-3">
+	  <h3 id="sec-3-24"><span class="section-number-3">3.24</span> Pop OS</h3>
+	  <div class="outline-text-3" id="text-3-24">
+
+	    <ul>
+	      <li>own appstore<br/>
+	      </li>
+	      <li>no easy way to install proprietary drivers<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-25" class="outline-3">
+	  <h3 id="sec-3-25"><span class="section-number-3">3.25</span> Kodachi Linux</h3>
+	  <div class="outline-text-3" id="text-3-25">
+
+	    <ul>
+	      <li>L'idée est de booter à partir d'une clé USB, de surfer anonymement, et de quitter sans laisser aucune trace.<br/>
+	      </li>
+	      <li>Tout le système tourne en RAM, donc pas de traces laissées derière (live ?)<br/>
+	      </li>
+	      <li>Qu'en est-il en mode persistant ? <br/>
+	      </li>
+	      <li>ça permet en fait d'avoir Linux sur une clé et d'utiliser n'importe quel ordinateur pour surfer anonymement sur Internet.<br/>
+	      </li>
+	      <li>Based off Xubuntu<br/>
+	      </li>
+	      <li>custom XFCE<br/>
+	      </li>
+	      <li>for support contact the developer ??<br/>
+	      </li>
+	      <li>plein à craquer de bons logiciels pour l'anonymat etc.<br/>
+	      </li>
+	      <li>configure plein de trucs tout seul, ça simplifie la vie<br/>
+	      </li>
+	      <li>par contre passe par des VPNs tout seul et tout. Est-ce que l'opérateur du VPN ne nous surveille pas plus facilement comme ça ? tout transite par lui ! <br/>
+	      </li>
+	      <li>si c'est crypté, alors même si ça passe par lui il ne verra rien.<br/>
+	      </li>
+	      <li>ne semble plus maintenu<br/>
+	      </li>
+	      <li>maintenu par un seul gars en Jordanie<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-26" class="outline-3">
+	  <h3 id="sec-3-26"><span class="section-number-3">3.26</span> Parrot</h3>
+	  <div class="outline-text-3" id="text-3-26">
+
+	    <ul>
+	      <li>security focused<br/>
+	      </li>
+	      <li>FireJail + AppArmor : your machine is pretty safe, at the cost of not running applications as root.<br/>
+	      </li>
+	      <li>Rolling Release<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-27" class="outline-3">
+	  <h3 id="sec-3-27"><span class="section-number-3">3.27</span> Slackel</h3>
+	  <div class="outline-text-3" id="text-3-27">
+
+	    <ul>
+	      <li>the servers are in greece, so it takes longer to download packages.<br/>
+	      </li>
+	      <li>slackware based, you need to know your way, dependencies are not resolved.<br/>
+	      </li>
+	    </ul>
+
+	  </div>
+
+	</div>
+
+	<div id="outline-container-3-28" class="outline-3">
+	  <h3 id="sec-3-28"><span class="section-number-3">3.28</span> Solus</h3>
+	  <div class="outline-text-3" id="text-3-28">
+
+	    <ul>
+	      <li>independant<br/>
+	      </li>
+	      <li>budgie desktop (gnome 2)<br/>
+	      </li>
+	      <li>Rolling distro (ouch)<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-29" class="outline-3">
+	  <h3 id="sec-3-29"><span class="section-number-3">3.29</span> Ultimate Edition</h3>
+	  <div class="outline-text-3" id="text-3-29">
+
+	    <ul>
+	      <li>Fork de Ubuntu et de Mint, deux distros qui rox<br/>
+	      </li>
+	      <li>MATE desktop (Gnome 2 based)<br/>
+	      </li>
+	      <li>un channel avec deux personnes<br/>
+	      </li>
+	      <li>Apparemment écrit par un gamin de 12 ans<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-30" class="outline-3">
+	  <h3 id="sec-3-30"><span class="section-number-3">3.30</span> Neptune</h3>
+	  <div class="outline-text-3" id="text-3-30">
+
+	    <ul>
+	      <li>Based off Debian<br/>
+	      </li>
+	      <li>First boot didn't mention software updates, default software update manager doesn't have a button to look for updates. Muon did, and found 60+ updates.<br/>
+	      </li>
+	      <li>Problems avec KDE (response time is variable)<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-31" class="outline-3">
+	  <h3 id="sec-3-31"><span class="section-number-3">3.31</span> KaOS</h3>
+	  <div class="outline-text-3" id="text-3-31">
+
+	    <ul>
+	      <li>RR<br/>
+	      </li>
+	    </ul>
+
+
+	    <p>  <br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-32" class="outline-3">
+	  <h3 id="sec-3-32"><span class="section-number-3">3.32</span> BlankOn</h3>
+	  <div class="outline-text-3" id="text-3-32">
+
+	    <ul>
+	      <li>own desktop (Manokwari) based off GNOME 3<br/>
+	      </li>
+	      <li>Poor Installer choices<br/>
+	      </li>
+	      <li>wiki in indonesian<br/>
+	      </li>
+	      <li>own package manager (Warsi)<br/>
+	      </li>
+	      <li>Maleo (HTML 5 developement tool)<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-33" class="outline-3">
+	  <h3 id="sec-3-33"><span class="section-number-3">3.33</span> Clear Linux</h3>
+	  <div class="outline-text-3" id="text-3-33">
+
+	    <ul>
+	      <li>software bundles instead of individual packages<br/>
+	      </li>
+	      <li>extreme rolling release model (2 updates a day, 9 a week)<br/>
+	      </li>
+	      <li>proactive CVE scanning<br/>
+	      </li>
+	      <li>Optimized for Intel<br/>
+	      </li>
+	      <li>The mixer : possibility to install third party packages.<br/>
+	      </li>
+	      <li>OS config is in <i>usr, system config goes to /etc</i> (which is real light), and user config is in home/<br/>
+	      </li>
+	      <li>/etc/fstab isn't even there after install time. It must be manually created after install.<br/>
+	      </li>
+	      <li>not desktop ready, especially in multi-boot environement.<br/>
+	      </li>
+	      <li>poor installer<br/>
+	      </li>
+	      <li>poor gnome support<br/>
+	      </li>
+	      <li>missing software<br/>
+	      </li>
+	      <li>poor package manager<br/>
+	      </li>
+	      <li>poor codec support<br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-34" class="outline-3">
+	  <h3 id="sec-3-34"><span class="section-number-3">3.34</span> Berry linux</h3>
+	  <div class="outline-text-3" id="text-3-34">
+
+	    <ul>
+	      <li>Japanese website<br/>
+	      </li>
+	      <li>Small, used for demo or rescue, mainly for live<br/>
+	      </li>
+	      <li>Based off Fedora<br/>
+	      </li>
+	    </ul>
+
+
+	    <p>  <br/>
+	    </p>
+	    <p><br/>
+	  </p></div>
+
+	</div>
+
+	<div id="outline-container-3-35" class="outline-3">
+	  <h3 id="sec-3-35"><span class="section-number-3">3.35</span> Fugulta</h3>
+	  <div class="outline-text-3" id="text-3-35">
+
+	    <ul>
+	      <li>openbsd live  <br/>
+	      </li>
+	    </ul>
+
+
+	    <p><br/>
+	  </p></div>
+	</div>
+
+      </div>
+
+      <div id="outline-container-4" class="outline-2">
+	<h2 id="sec-4"><span class="section-number-2">4</span> online distro tester</h2>
+	<div class="outline-text-2" id="text-4">
+
+	  <p><a href="https://distrotest.net">https://distrotest.net</a><br/>
+	</p></div>
+
+      </div>
+
+      <div id="outline-container-5" class="outline-2">
+	<h2 id="sec-5"><span class="section-number-2">5</span> HTML version</h2>
+	<div class="outline-text-2" id="text-5">
+
+	  <p><a href="https://codepen.io/ychaouche/full/QWaBjXQ/full">https://codepen.io/ychaouche/full/QWaBjXQ/full</a><br/>
+	  </p>
+	  <p><br/>
+	  </p><div id="footnotes">
+	    <h2 class="footnotes">Footnotes: </h2>
+	    <div id="text-footnotes">
+	      <p class="footnote"><sup><a class="footnum" name="fn-.1" href="#fnr-.1">1</a></sup> <a href="https://dev1galaxy.org/viewtopic.php?pid=24828#p24828">https://dev1galaxy.org/viewtopic.php?pid=24828#p24828</a><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p class="footnote"><sup><a class="footnum" name="fn-.2" href="#fnr-.2">2</a></sup> <a href="https://www.mail-archive.com/openindiana-discuss@openindiana.org/">https://www.mail-archive.com/openindiana-discuss@openindiana.org/</a><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p class="footnote"><sup><a class="footnum" name="fn-.3" href="#fnr-.3">3</a></sup> <a href="https://www.youtube.com/watch?v=0EHM_6e9byY">https://www.youtube.com/watch?v=0EHM_6e9byY</a><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p class="footnote"><sup><a class="footnum" name="fn-.4" href="#fnr-.4">4</a></sup> <a href="https://openindiana.org/pipermail/openindiana-discuss/2021-May/024648.htmlu">https://openindiana.org/pipermail/openindiana-discuss/2021-May/024648.htmlu</a><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p><br/>
+	      </p>
+	      <p class="footnote"><sup><a class="footnum" name="fn-.5" href="#fnr-.5">5</a></sup> <a href="https://openindiana.org/pipermail/openindiana-discuss/2021-May/024638.html">https://openindiana.org/pipermail/openindiana-discuss/2021-May/024638.html</a><br/>
+	    </p></div>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+    <div id="postamble">
+      <p class="date">Date: 2022-04-11T15:11+0100</p>
+      <p class="author">Author: Yassine Chaouche</p>
+      <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+      <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+    </div>
+  </body>
+</html>
