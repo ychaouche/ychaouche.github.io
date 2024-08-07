@@ -1,0 +1,645 @@
+-*-outline-*-
+#+OPTIONS: \n:t
+#+INFOJS_OPT: view:folding 
+
+Voir aussi tabs > distros
+* Queue
+** salix
+https://www.salixos.org/
+3 persons on IRC channel
+startup guide : https://guide.salixos.org/
+based on slack
+** Absolute Linux
+based on slack
+https://www.absolutelinux.org/getting_started/index.html
+* haven't tried yet
+** RockyLinux
+*** whatis
+Community CentOS
+Entreprise grade
+*** watch out
+1st release candidate
+** OpenSuse
+*** why choose
+praised for its highly polished KDE [1]
+better than debian plasma on same machine (440Mo of RAM right after kde starts) [1]
+420Mo of RAM right after kde starts [2]
+multimedia keys recognized automatically
+low ressource usage
+*** check
+if you can play all formats (avi, matroska, mp4) [1]
+if not, swap system packages to community repos. It should pull out the codecs.
+*** quirks
+kde wallet popping multiple times, too early on [2]
+taiwanese bookmarks in firefox [2] ?
+poor font rendering (also on mabox) (possible solution [3], or just change theme)
+*** problems
+many errors on package installation or update [2]
+package conflicts when choosing packages from the community repo [2]
+video playback is a mess [2]
+yast silenlty crashing
+*** links
+[1] https://all-things-linux.blogspot.com/2020/09/opensuse-leap-152-any-good.html
+[2] https://www.dedoimedo.com/computers/opensuse-leap-15-2.html
+[3] https://www.dedoimedo.com/computers/plasma-breeze-brooze-black-fonts-theme-edit.html
+** OpenIndiana
+*** whatis
+Continuation of OpenSolaris after Oracle dropped it.
+Somehow linked to illumos.
+Illumos is the opearting system, OpenIndiana is an Illumos distro for desktops while OmniOS is for servers. See [1]
+Illumos is a Unix operating system.
+
+[1] https://illumos.org/docs/about/distro/
+*** community
+IRC channel : 60 nicks
+Mailing List : 
+ - 40 messages / day (1st May)
+ - 230 messages / month (April)
+ - main contrib : Reginald Beardsley
+
+*** features [3]
+ - Dtrace [1]
+ - open-zfs [2][5] and time-slider [4]
+ - zones (application containers)
+ - Service Management Facility (SMF)
+ - ipfilter
+
+
+
+[1] https://illumos.org/books/dtrace/preface.html#preface
+[2] https://openzfs.org/wiki/Main_Page
+[3] https://illumos.org/docs/about/features/
+[4] https://www.openindiana.org/documentation/gallery/oi-b148-gui-timeslider/
+[5] https://wiki.openindiana.org/oi/ZFS
+*** criticismes
+[1] {
+ - "My concern is not who broke it, but that it is being released broken."
+ - "releases are not being tested for even basic functionality"
+ - "I suspect most would simply abandon OI entirely. Not because they couldn't make it work, but because the distribution image is so unprofessional as to be embarrassing."
+ - "OI *could* make most, if not all, of the Linux distros I've tested look bad.  Sadly the current status is the opposite.  The worst Linux distro I've tested makes OI look bad."
+}
+
+[1] https://openindiana.org/pipermail/openindiana-discuss/2021-May/024638.html
+*** watch out for
+lack of documentation, but there's a wiki [1] and ML archives [2].
+firefox very old [3]
+no graphical package manager [3]
+Rolling Release isn't properly finished [4]; failed to boot after install (Non-system disk or disk error)
+It's a rolling release distro[5], even if website claims only hipster is RR. OmniOS is supposedly more stable release model but you'd be on your own with a DE there. [5]
+
+
+[1] https://wiki.openindiana.org/
+[2] https://www.mail-archive.com/openindiana-discuss@openindiana.org/
+[3] https://www.youtube.com/watch?v=0EHM_6e9byY
+[4] https://openindiana.org/pipermail/openindiana-discuss/2021-May/024638.html
+[5] https://openindiana.org/pipermail/openindiana-discuss/2021-May/024648.htmlu
+* tried
+** Mabox
+*** appraisals
+9.4 / 10 sur distrowatch !
+napcok shares useful bash scripts and tips on the forums
+blazing fast, very light
+lots of configuration helpers 
+great community with quick answers
+move from mint to mabox, charmed
+quick install (10-15min), faster boot times than debian testing
+main dev is very friendly and active on the forum
+*** whatis
+manjaro with openbox
+*** features
+yay : yet another yaourt (package management from the cmdline)
+ya isn't mabox specific
+yaourt is for AUR 
+AUR is user repos
+you can have multiple kernels in case something goes wrong
+*** watch out for
+updates : 
+read manjaro forums first
+https://forum.manjaro.org/
+*** problems
+like all RRs : 
+
+- tu manques un update, tu casses tout au prochain [1]
+- tu ne peux pas installer un truc si le système n'est pas à jour
+- avant de mettre à jour tu dois lire les release notes. Si un paquet pose problème, post-pone, et en attendant tu ne peux rien installer.
+
+[1] https://forum.maboxlinux.org/t/considering-mabox-as-my-next-distro/473/9?u=ychaouche
+
+
+See also infos.txt > linux distros > rolling releases
+** Linux Lite
+  - No specific feature
+  - It just works, everything is simpler to use than other distros
+  - Everything is easy to find, no surprises.
+  - Smoother
+  - More bugs than xubuntu
+  - Can't register to the forum with yahoo mail
+  - Voir mes notes manuscrites p170
+** Kubuntu
+*** plus
+  - plus efficace que Linux Mint
+*** criticismes
+  - mais KDE semble plus buggé
+    - Alt-F1 qui est lié avec la touche windows et qui me lance application launcher
+    - les définitions de keyboard shortcuts qui sautent après un reboot
+    - Windows-D qui ne lance pas dolphin, les autres raccourcis marchent bien
+    - PrnScrn qui ne lance pas spectacle
+    - Ctrl+Entrée ne valide plus l'entrée de wachyadoin
+    - plantages de temps en temps
+
+
+** Linux Mint
+*** Features
+  - uses Cinnamon which is a fork of gnome 3
+  - timeshift installed by default.  
+*** Acclaims
+  - use of ureadahead speeds up the boot process on HDD.
+*** Criticismes
+  - inferior to kubuntu	 
+*** Misc
+  - you should change the I/O scheduler from CFQ to deadline.
+  - if you have nvidia, you should disable vsync, this will put the workload on the GPU. Sinon remettre vsync si c'est moins bien.
+
+** KDE Neon
+  - Test the latest KDE
+  - You also have Kubuntu
+  - Reason to choose : latest KDE desktop environement (plasma)
+  - support via forum or IRC
+
+Review :
+ - Media control forward/backward (keyboard shortcuts) seem to stop at an arbitrary position in the playlist.
+ - Media control pause/play doesn't always work
+ - dbus controls don't always work.
+  - pas de réponse, comme d'hab, sur les forums KDE.
+  - mysql mal installé
+  - mysql + mariadb, que choisir ?
+  - mysql ne démarre pas (erreur /var/lib/mysql n'existe pas, c'est /var/lib/mysql-files qui existe)
+  - tchecktchoukha berrommane.
+** NuTyX GNU/Linux
+*** quick review
+  - based off lsf and beyond lsf
+  - custom "cards" package manager
+  - see NuTyX entry in infos.txt
+  - la version fixe ne vie que 3 mois max, la RR 1 an.
+  - quand on casse le système, on reviens à la base et on réinstall tout
+  - selon fanch`sur #nutyx, ça prend quelques minutes de tout réinstaller.
+  - mais il n'a pas voulu en dire plus et m'a dit que si j'hésitais je devais passer mon chemin;
+  - enfin, j'ai installé nutyx mais grub n'arrive pas à le booter... et l'assistance sur les forums fait défaut.
+
+*** detailed info
+**** the cards package manager
+Software comes in packages, which are a set of libraries, applications and configuration files suitable to be read by the cards package manager.
+
+It has everything cards needs to install the package.
+
+To makge an actual package, you need to write a script, also known as a pkgfile.
+
+A pkgfile script has three parts :
+ 1. Optional metadata goes in a header. This includes project description, url and author.
+ 2. mandatory information like package name, version and dependencies (makedepends=(...)) comes next.
+ 3. the build function itself.
+
+Here's an example : https://github.com/NuTyX/packages-x86_64/blob/rolling/base/gzip/Pkgfile
+
+The build function is essentially configure make make install with the right options for each particular package.
+
+build()
+{
+cd gzip-$version
+sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c
+echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h
+
+./configure --prefix=/usr
+make
+make -k check || true
+make DESTDIR=$PKG install
+mkdir -p $PKG/bin
+mv -v $PKG/usr/bin/gzip $PKG/bin
+}
+
+
+
+Pkgfile are parts of a **port**, which is a folder containing all the necessary files and folders to create the package.
+
+
+**** packages classification :  collections, families, groups, categories.
+
+Pacakges may be grouped into collections, such as kde5, xfce4
+They may also be grouped into families, such as gstreamer1-plugins-bad, gstreamer1-plugin-good, gstreamer1-plugin-libav...
+They may be part of a group, like devel, man and doc (gcc.devel, gcc.man, gcc.doc)
+And finally, the are classified by category, like Internet Browsing or Office suites.
+
+**** ports
+
+ports are directories containing the necessary files to build a package. The most important file is the Pkgfile. It should have a source variable containing the url from where to download and build the source code.
+
+For example (source:http://www.nutyx.org/en/recept):
+
+name=gnome-terminal
+version=2.6.4
+release=1
+# Location of the sources of the package to be built
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+
+# Recipe for building the package (often uses three standard commands)
+build() {
+cd $name-$version
+./configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info
+make
+make DESTDIR=$PKG install
+}
+
+
+dependencies are put in makedepends=(...), it contains names of packages.
+
+**** the port tool
+
+Apparemment il y aurait un outil nommé port qui ramène tous les ports depuis une source distante et les met dans /usr/ports/$collection/
+
+**** 
+
+Le problème c'est que la version de NuTyX n'a qu'une durée de vie de 1 à 3 mois, et la RR 1 an. Donc c'est plus une distro RR que fixe.
+
+
+** Elementary OS
+  - Pantehon DE
+  - many in-house apps
+  - the least customizable distro
+  - some bugs (screen-saver, date in arabic, screen-saver lock down)
+
+** Netrunner
+  - Debian (stable), Manjaro (RR)
+  - Heavily tweaked KDE
+  - Very nice UI
+  - Octopi / Discover : two package managers. Octopi for arch-based netrunner (RR). Oktopi <- octpi chakra.
+    - Octopi : powerfull pacman gui frontend. Netrunner RR uniquement.
+    - Discover : lien avec muon (KDE) et plasma (plasma discover). Very nice.
+  - No IRC support, only forum
+  - Readme is a 404
+  - Thoroughly enjoyed by jesse smith @ distrowatch. 
+  - Worth a try ? 
+
+** MX Linux :
+   - the package manager (MX Package Installer) also searches flatpacks
+   - DE = xfce, considered mid-weight. 
+   - Programs launch quickly
+   - Default prompt is on two lines :)
+   - mx-tools save time for some usual tasks like installing codecs or installing flash support.
+   - much smaller, much faster than fedora/opensuse
+   - lacks proper documentation
+
+   - Un gros avantage de la version live avec persistance est qu'à chaque fois qu'on installe une nouvelle app, c'est mis dans la clé USB. 
+     - Ainsi, lorsqu'on change d'endroit, on peut emmener notre clé avec nous et tout y est.
+     - Même lorsque l'OS est pété on a une sauvegarde sur l'USB.
+
+   - systemd recalcitrant. Uses sysvinit
+
+** Deepin
+  - Has its own DE based off Qt5 called DDE (deepin desktop env)
+  - Develops its own software too (dmusic, dplayer, deepin software center, deepin image viewer, deepin screen capture, deepin voice recorder...)
+  - why not trust a chinese distro when you already trust chinese hardware ? 
+  - no support for btrfs
+
+* Won't try
+
+     ##### /    ##   ###
+  ######  /  #####    ###
+ /#   /  /     #####   ###                             #            #
+/    /  ##     # ##      ##                           ##           ##
+    /  ###     #         ##                           ##           ##
+   ##   ##     #         ##    /###   ###  /###     ########     ######## ###  /###   ##   ####
+   ##   ##     #         ##   / ###  / ###/ #### / ########     ########   ###/ #### / ##    ###  /
+   ##   ##     #         ##  /   ###/   ##   ###/     ##           ##       ##   ###/  ##     ###/
+   ##   ##     #         ## ##    ##    ##    ##      ##           ##       ##         ##      ##
+   ##   ##     #         ## ##    ##    ##    ##      ##           ##       ##         ##      ##
+    ##  ##     #         ## ##    ##    ##    ##      ##           ##       ##         ##      ##
+     ## #      #         /  ##    ##    ##    ##      ##           ##       ##         ##      ##
+      ###      /##      /   ##    ##    ##    ##      ##           ##       ##         ##      ##
+       #######/ #######/     ######     ###   ###     ##           ##       ###         #########
+         ####     ####        ####       ###   ###     ##           ##       ###          #### ###
+                                                                                                ###
+                                                                                         #####   ###
+                                                                                       /#######  /#
+                                                                                      /      ###/
+
+
+
+** Rebornos
+*** gle
+revival of antegros
+based off arch
+*** features
+possibilité de rollback [?]
+own installer (cnchi, fenix)
+5.11 kernel (devuan is still 4.19 as of 2021-04-27)
+Wayland
+*** criticisme
+2Go install pour rien puisqu'il télécharge les updates de toutes façons.
+400Mo d'update right after install
+5Go à télécharger en tout pour avoir les dernières mises à jour (RR)
+650 Mo de RAM utilisé (plasma)
+we need to wait for arch to make fixes [1]
+
+[1] https://rebornos.discourse.group/t/cant-access-network-shares-after-update/214/2
+*** appraisal
+meilleur que endeavour os
+*** community
+27 personnes sur le discord
+forum discourse plutôt responsif
+** Qubes OS
+   - Each app is launched in its own temporary VM that gets destroyed after
+   - Each window from different VMs has its own color
+   - You can have Template VMs, App VMs (temporary) and Standalone VMs (persistent)
+   - You can have vaults (VMs with no NIC)
+   - Qubes OS has a thunderbird plugin to open attachments in disposable VMs
+   - The VMs start quickly
+** Devuan
+*** Features
+  - OpenRC (gentoo) / sysvinit instead of systemd.
+  - presumabely faster than debian.
+  - XFCE, 200M of RAM. 3.5 Gb of Disk.
+  - eudev as default device manager instead of udev (part of systemd)
+  - Le problème n'est pas *que* pour l'init, mais tout systemd 
+  - ceci inclut libsystemd0, dont dépend gvfs-daemon par exemple
+  - gvfs-daemon <- corbeille du bureau, notification quand on insert une clé USB
+  - GNOME bug beaucoup sans systemd sur OpenBSD.
+  - Borrowing from gentoo (eudev, elogind)
+
+*** Criticismes
+  - Mal fini, bricolage, rafistolage d'outils.
+  - why devuan when we already have AntiX and MX ?
+    - AntiX has managed to produce a systemd-free distro that works
+    - Devuan has been trying for two years and didn't produce much
+    - AntiX had multiple releases in the same span
+  - Beta pendant 2 ans...
+*** Acclaims
+  - 10/10, presque tout le monde aime. A voir si c'est par haine de systemd.
+*** Community
+  - communauté de quinqua et sexagénaires.
+  - 260 personnes sur #devuan
+  - a little arrogance on the forums [1]
+
+[1] https://dev1galaxy.org/viewtopic.php?pid=24828#p24828
+*** misc
+  - zsh more programmer friendly than bash
+  - other possible init systems : 
+     - openrc (gentoo, hyperbola, artix)
+     - sinit 
+     - runit (voidlinux, artix)
+     - s6 (obarun linux)
+     - shephered 
+*** Autres distros n'utilisant pas systemd
+    - AntiX
+    - MX
+    - slackware
+    - gentoo
+  - Autres distros DEBIAN n'utilisant pas systemd : 
+    - AntiX
+    - MX
+** 4MLinux
+  - Une fois en ligne, le système prend 160M de RAM.
+  - Certains scripts shell pour des outils de maintenance qu'on ne trouve pas ailleurs.
+  - Why install wine for supertux ? 
+  - Too many errors when installing new software.
+  - Custom WM (JVM + feh + PacManFM)
+  - paypal to download :( 
+  - No package manager ! you need to install software from source yourself.
+
+** OpenMandriva
+*** Features
+  - OpenMandriva Control Center
+  - dfn package manager (mageia aussi)
+  - dfndragora (mageia aussi)
+  - utilisation de clang au lieu de gcc
+  - utilisation d'aria et rpm en sous-marin pour la gestion des paquets ? (2016, source : https://www.mageialinux-online.org/forum/topic-22636-1+openmandriva-lx-3-0-un-fork-communautaire-qui-ne-sert-a-rien.php#m218072)
+  - kahnia to test the latest packages from the automatic build farm (abf.openmandriva.com)
+  - automated build farm specific to openmandriva and rosa.
+*** Criticismes
+  - mageia surpassing it in terms of stability and number of packages.
+  - attention, peut être quelques bugs du à l'utilisation de LLVM Clang
+    - les codes sources qui utilisent des spécificités de GNU GCC
+    - les codes sources qui utilisent l'asm goto spécifique à GCC
+    - les codes sources qui ne font pas cas des autres compilateurs.
+
+*** Community
+  - Mandriva business basée sur Mageia, Mandriva desktop basée sur OpenMandriva, elle-même basée sur ROSA (source : https://genius.it/www.mageialinux-online.org/forum/topic-16668-2+votre-avis-sur-openmandriva-e.php)
+  - fork de ROSA, le mandriva russe
+  - 28 people in the IRC channel
+  - Version communautaire de Mandriva
+  - 46 on #mageia
+  - pas de réponse sur linuxquestions.org
+
+
+
+** SparkyLinux
+*** Acclaims
+  - very good reviews
+  - rated 27th on distrowatch
+  - 8.3/10 sur DW
+*** Features
+  - generalist
+  - changes are persistent
+  - semi-rolling
+  - install any DE/WM
+  - APTus, let you install software not present in debian repos [Q]
+  - APTus is just another front-end to APT
+  - APTus extra (installation de codecs [u])
+  - Sparky Center
+
+*** Criticismes
+  - rolling
+  - some reported it to be buggy and slow on many occasions. 
+  - inferior to MX Linux (2 reviews)
+  - bugs when you try to customize it 
+  - errors on install or post-install
+  - only works with XFCE, MATE and KDE have lots of glitches which are hard to fix
+*** Community
+  - ils sont 5 sur le salon IRC.
+** Oracle
+  - Stable
+  - good memory management
+  - XFS the default.
+  - update the kernel w/o rebooting (ksplice technology) (comes w/ a price)
+  - DTrace ready.
+  - Support lacking/unexistant for non paying users.
+  
+
+see : https://www.trustradius.com/products/oracle-linux/reviews
+
+
+** PCLinuxOS
+  - outstanding support
+  - 9 personnes sur IRC
+
+  - LxQT can't be installed alone, you must install apps with it, presumably.
+    - and once you do, you can't remove the excess apps (music players etc.)
+  - RR
+  - forum registration is closed and is a manual process (mail the admin)
+** Fedora
+  - some bugs and freezes.
+  - too much bugs (deidomedo)
+  - some people report slowliness
+  - c'est fou, nobody cares about KDE (aucune réponse https://forums.fedoraforum.org/showthread.php?207198-Konsole-enabling-or-disabling-Ctrl-S-Ctrl-Q)
+  - used by Linus Torvalds (really ?)
+  - RHEL branches from Fedora
+  - kernel.org runs on fedora
+  - dnf package manager.
+  - around 1.2 million users.
+  - flawless upgrades.
+  - Wayland (no X)
+  - Core values : 4Fs : Friends First, Features and Freedom 
+
+  - sliverblue ? os is freezed, no dfn, only install via flatpacks or toolbox.
+    - toolbox    : used to install CLI software
+    - flatpacks  : used to install GUI software
+    - rpm-ostree : used to upgrade the system
+    - any changes with rpm-ostree will generate a new bootable image. 
+    - if you're not happy with the new image you can always revert back to previous image which is shown in the grub menu.
+    - so instead of having a new menu entry for new kernel only, you have a new image each time you deeply change the system.
+    - you don't create new images for flatpacks because they're not involved with the system.
+
+  - release notes w/ clear instructions and very few things to touch (if ever using a specific configuration)
+  - 776 personnes sur IRC.
+  - 96 personnes sur #silverblue
+
+  - IT WILL FORMAT THE WHOLE DISK ! 
+    - "Note: it is advisable to keep the default partitioning setup that the Installer suggests, since rpm-ostree expects this setup."
+    - from https://silverblue.fedoraproject.org/download
+
+** Emmabuntus
+  - no special feature.
+  - why don't you use debian or ubuntu ?
+  - 
+
+** Paldo
+  - non-existing documentation
+  - non-existing community
+  - very calm forum
+  - forum registration requires moderation.
+
+** Zentyal
+  - network-centric (gateways)
+  - offers a custom webmin-like web-ui.
+** SpringDale Linux
+  - just a redhat clone, like CentOS, maintained by princeton university computing staff.
+  - some bugs opened for years, no comments, no follow ups.
+
+
+** SmartOS
+  - This is specialized for virtualization/containerization.
+
+** NetBSD
+  - isn't suited for desktop (bad review on distrowatch)
+  - meagre documentation
+** ExTix
+  - Bad user reviews
+  - Bugs
+  - Nothing particular
+
+** Hanthana
+  - Current version : 30. Versions in the forums : 17.
+  - Ghost forum
+  - Forum registration doesn't seem to work.
+
+** Runtu
+  - exclusively in russian
+** BlackPanther OS
+  - support via facebook only
+
+** Robolinux
+  - Support par mail, pas de forum, donc les solutions aux problèmes récurrents ne sont pas partagées
+  - Quelques avis négatifs sur dedomeido
+
+
+** Voyagerlive
+  - no doc
+  - support forum is closed
+** Fatdog Linux 
+  - the default user is root
+  - auto-login as root
+
+
+** Feren OS
+  - RR
+
+** Pop OS
+  - own appstore
+  - no easy way to install proprietary drivers
+** Kodachi Linux
+  - L'idée est de booter à partir d'une clé USB, de surfer anonymement, et de quitter sans laisser aucune trace.
+  - Tout le système tourne en RAM, donc pas de traces laissées derière (live ?)
+  - Qu'en est-il en mode persistant ? 
+  - ça permet en fait d'avoir Linux sur une clé et d'utiliser n'importe quel ordinateur pour surfer anonymement sur Internet.
+  - Based off Xubuntu
+  - custom XFCE
+  - for support contact the developer ??
+  - plein à craquer de bons logiciels pour l'anonymat etc.
+  - configure plein de trucs tout seul, ça simplifie la vie
+  - par contre passe par des VPNs tout seul et tout. Est-ce que l'opérateur du VPN ne nous surveille pas plus facilement comme ça ? tout transite par lui ! 
+  - si c'est crypté, alors même si ça passe par lui il ne verra rien.
+  - ne semble plus maintenu
+  - maintenu par un seul gars en Jordanie
+
+
+** Parrot
+  - security focused
+  - FireJail + AppArmor : your machine is pretty safe, at the cost of not running applications as root.
+  - Rolling Release
+** Slackel
+  - the servers are in greece, so it takes longer to download packages.
+  - slackware based, you need to know your way, dependencies are not resolved.
+** Solus
+  - independant
+  - budgie desktop (gnome 2)
+  - Rolling distro (ouch)
+
+** Ultimate Edition
+  - Fork de Ubuntu et de Mint, deux distros qui rox
+  - MATE desktop (Gnome 2 based)
+  - un channel avec deux personnes
+  - Apparemment écrit par un gamin de 12 ans
+
+** Neptune
+  - Based off Debian
+  - First boot didn't mention software updates, default software update manager doesn't have a button to look for updates. Muon did, and found 60+ updates.
+  - Problems avec KDE (response time is variable)
+
+** KaOS
+  - RR
+  
+** BlankOn
+  - own desktop (Manokwari) based off GNOME 3
+  - Poor Installer choices
+  - wiki in indonesian
+  - own package manager (Warsi)
+  - Maleo (HTML 5 developement tool)
+
+** Clear Linux
+  - software bundles instead of individual packages
+  - extreme rolling release model (2 updates a day, 9 a week)
+  - proactive CVE scanning
+  - Optimized for Intel
+  - The mixer : possibility to install third party packages.
+  - OS config is in /usr, system config goes to /etc/ (which is real light), and user config is in home/
+  - /etc/fstab isn't even there after install time. It must be manually created after install.
+  - not desktop ready, especially in multi-boot environement.
+  - poor installer
+  - poor gnome support
+  - missing software
+  - poor package manager
+  - poor codec support
+
+
+** Berry linux
+   - Japanese website
+   - Small, used for demo or rescue, mainly for live
+   - Based off Fedora
+  
+
+** Fugulta 
+   - openbsd live  
+
+* online distro tester
+https://distrotest.net
+* HTML version
+https://codepen.io/ychaouche/full/QWaBjXQ/full
