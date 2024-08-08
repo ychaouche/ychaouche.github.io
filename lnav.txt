@@ -1,0 +1,88 @@
+-*-outline-*-
+
+** lnav
+*** why I don't like
+**** filters
+you can't use filter-in and filter-out at the same time.
+Try this :
+filter-in postfix
+filter-out anvil
+
+anvil still displayed
+
+try other way around, anvil still displayed.
+**** sql queries
+when you edit a query
+backspace deletes more than just a character,
+it seems to delete everything before point
+*** why I like
+it's like logstash or splunk at a smaller scale,
+but contrary to both,
+it is easy to install,
+has no setup required,
+and don't require to run on their own server
+(easy on resources)
+*** automatic completions
+C-g
+*** moving around
+o/O 	      forward/backward 1h
+d/D 	      forward/backward 1D
+1-6/Shift 1-6 forward/backward hour + 10-60 minutes -backrwards doesn't work in azerty layout-
+0/Shift 0     next/previous day boundary
+home/end      top/bottom of file
+s/S	      previous/next [s]lowdown (log rate drops)
+
+
+e/E           next/previous error
+w/W           next/previous warning
+
+f/F           next/previous file
+*** searching
+**** string search
+n/N next/previous search hit
+<>  next/previous search hit on same line
+some words and values avaiable in the logs are auto-completable with <tab>
+**** sql search
+sqlite tables are created on the fly to search for things.
+type p to see the list of fields.
+use with ;<sql>
+*** display
+**** marking lines and bookmarking
+m       mark/unmarks a line
+u/U     next/previous bookmarked line
+C[lear] clear all bookmarks
+**** Elapsed [T]ime
+**** Histogram
+i : toggle histogram
+I : when in histogram view, pressing i will open log file at histogram position
+z/Z : zoom in/out
+**** filtering
+:filter-in  	  : only show lines matching <filter>
+:filter-out 	  : hide lines matching <filter>
+:disable-filter   : <tab> completion available
+:enable-filter    : <tab> completion available
+:set-min-loglevel : <tab> completion available
+**** word-wrap
+:enable-word-wrap
+:disable-word-wrap
+**** follow
+By default. Just go to EOF.
+**** time frame
+use :hide-lines-before and :hide-lines-after to only show lines between two time stamps
+*** output
+:append-to <file> : write marked lines to file
+:pipe-to : write marked lines to a command
+*** partitionning
+the logfile can be partitionned with :partition-name
+*** linuxquestion cheat-sheet
+*** criticism
+**** missing
+disable all filters
+view all filters
+some filtering combination doesn't work, example : filter-in postifx, filter-out anvil, anvil isn't filtered out.
+
+*** Online Documentation
+https://docs.lnav.org/en/v0.12.0/
+*** sessions
+save session with :export-session-to
+this will save filters, tags, tables etc.
