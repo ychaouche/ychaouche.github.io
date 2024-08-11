@@ -1,0 +1,27 @@
+;; from https://www.masteringemacs.org/article/demystifying-emacs-window-manager
+;; create a window below all others
+;; 
+;; letting you go from this
+;; +----------+-----+-----+
+;; |          |     |     |
+;; |    R1    | R2  | R3  |
+;; |          |     |     |
+;; +----------+-----+-----+
+;;
+;; to this
+;; +----------+-----+-----+
+;; |          |     |     |
+;; |    R1    | R2  | R3  |
+;; |          |     |     |
+;; +----------+-----+-----+
+;; |	        B1          |
+;; +----------------------+
+
+
+(defun horizontal-half-split (arg)
+  "Split window below from the parent or from root with ARG."
+  (interactive "P")
+  (split-window (if arg (frame-root-window)
+                  (window-parent (selected-window)))
+                nil 'below))
+
