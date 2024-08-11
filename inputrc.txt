@@ -1,0 +1,42 @@
+$include  /etc/inputrc
+
+#         .-"""-.
+#        / .===. \
+#        \/ 6 6 \/
+#        ( \___/ )
+#   _ooo__\_____/______
+#  /                   \
+# | transpose arguments |
+#  \_______________ooo_/
+#         |  |  |
+#         |_ | _|
+#         |  |  |
+#         |__|__|
+#         /-'Y'-\
+#        (__/ \__)
+
+
+"\e\C-b": shell-backward-kill-word
+"\e\C-f": shell-forward-word
+# Swap the preceding argument with the next
+"\e\C-t": "\e\C-b\e\C-f\C-y"
+
+# my version
+
+
+#        \\\///
+#       / _  _ \
+#     (| (.)(.) |)
+# .-.OOOo--()--oOOO.-.
+# |                  |
+# |       misc       |
+# |                  |
+# '-.oooO------------'
+#    (   )   Oooo.
+#     \ (    (   )
+#      \_)    ) /
+#            (_/
+
+"\ew": copy-region-as-kill
+"\ed": shell-kill-word
+"\C-h": kill-region
