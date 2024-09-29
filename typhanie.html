@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>typhanie</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="typhanie"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2024-09-29T14:54+0100"/>
+<meta name="author" content="Yassine Chaouche"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">typhanie</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 jouons à un jeu</a></li>
+<li><a href="#sec-2">2 scénario 1</a></li>
+<li><a href="#sec-3">3 scénario 2</a>
+<ul>
+<li><a href="#sec-3-1">3.1 layout</a></li>
+<li><a href="#sec-3-2">3.2 1. Entrée illégale de devises</a></li>
+<li><a href="#sec-3-3">3.3 2. Garder le système fermé par la force de la loi</a>
+<ul>
+<li><a href="#sec-3-3-1">3.3.1 maintenir une rareté artificiel de la devise</a></li>
+<li><a href="#sec-3-3-2">3.3.2 favoritisme et exemptions</a></li>
+<li><a href="#sec-3-3-3">3.3.3 ces lois profitent aux membres de mon réseau</a></li>
+<li><a href="#sec-3-3-4">3.3.4 le système doit rester fermé</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-4">3.4 3. Revendre les devises d'origine bancaire vers le marché noir via les entreprises d'import export</a></li>
+<li><a href="#sec-3-5">3.5 4. Le rôle de la Banque Centrale dans la création artificielle de la rareté</a></li>
+<li><a href="#sec-3-6">3.6 5. Le conseiller protecteur</a></li>
+<li><a href="#sec-3-7">3.7 6. La Manipulation des Médias et l’Opinion Publique</a></li>
+<li><a href="#sec-3-8">3.8 6. Création du système</a></li>
+<li><a href="#sec-3-9">3.9 jeu</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 jeu 2</a></li>
+<li><a href="#sec-5">5 post linkedin</a></li>
+<li><a href="#sec-6">6 prompt image</a></li>
+<li><a href="#sec-7">7 réécriture</a>
+<ul>
+<li><a href="#sec-7-1">7.1 auteurs de thrillers politique</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> jouons à un jeu</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>Jouons à un jeu. <br/>
+Tu vis en typhanie,<br/>
+c'est un pays imaginaire de 40 millions d'habitants.<br/>
+</p>
+<p><br/>
+Il y a une loi dans ce pays qui interdit au gens de changer leur argent contre des devises étrangères,<br/>
+et il n'y a aucun bureau de change ouvert.<br/>
+</p>
+<p><br/>
+La seule façon d'avoir des devises s'est de se tourner vers une banque.<br/>
+Mais la banque ne t'octroie de l'argent que si tu respectes certaines conditions.<br/>
+Ces conditions sont fixées par la banque central du pays, la banque de Typhanie.<br/>
+</p>
+<p><br/>
+La condition est que cet achat ne peut se faire que pour les cas suivants :<br/>
+</p><ul>
+<li>payer un fournisseur<br/>
+</li>
+<li>payer des études à l'étranger<br/>
+</li>
+<li>payer des soins à l'étranger<br/>
+</li>
+</ul>
+
+
+<p><br/>
+dans tous les cas de figures,<br/>
+il faut fournir des preuves (factures, certificats).<br/>
+</p>
+<p><br/>
+La procédure de validation prend beaucoup de temps,<br/>
+ce qui représente autant d'opportunités perdues pour les commerçants d'import export,<br/>
+et les entreprises en général qui doivent se ravitailler de l'étranger.<br/>
+</p>
+<p><br/>
+En parallèle,<br/>
+on peut acheter de la devise au marché noir,<br/>
+mais elle coûte beaucoup plus cher,<br/>
+1,5 fois le prix de la devise dans les banques,<br/>
+seules endroits où tu peux acheter des devises.<br/>
+</p>
+<p><br/>
+Tu dois trouver un moyen de profiter de ce système,<br/>
+et de te faire un maximum d'argent sur le marché noir.<br/>
+</p>
+<p><br/>
+Comment t'y prendrais-tu ?<br/>
+Tu peux utiliser un rôle (général de l'armée, sénateur, membre du gouvernement, DG de banque&hellip;) ou rôles (plusieurs à la fois) ou créé plusieurs rôles pour arriver à tes fins.<br/>
+Tu peux voter des lois, créer une mafia organisée, ou tout autre procédé pour arriver à tes fins.<br/>
+Laisse ton imagination libre,<br/>
+il n'y a pas d'autres contraintes.<br/>
+</p>
+<p><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> scénario 1</h2>
+<div class="outline-text-2" id="text-2">
+
+<p>Dans un pays où l'accès aux devises est restreint,<br/>
+voici comment je tirerais profit à la fois du marché noir et du marché officiel.<br/>
+J'aurais besoin pour cela d'une équipe composé de 4 entitées :<br/>
+</p>
+<p><br/>
+</p><ol>
+<li>un DG de banque central<br/>
+</li>
+<li>un réseau d'importateurs<br/>
+</li>
+<li>un ministre de l'interieur ou de la défense<br/>
+</li>
+<li>un groupe de media influent<br/>
+</li>
+</ol>
+
+
+<p><br/>
+Voici coment je m'y prendrais :<br/>
+</p>
+<p><br/>
+</p>
+<p><br/>
+</p><ol>
+<li>Pousser les gens au marché noir<br/>
+</li>
+</ol>
+
+<p>En tant que DG de la banque central du pays,<br/>
+je créerais artificiellement la rareté des devises en :<br/>
+1.1 ralentissant la procédure de validation des demandes légitimes <br/>
+1.2 demandant des preuves supplémentaires aux entreprises et particuliers<br/>
+</p>
+<p><br/>
+Se faisant,<br/>
+je crée une situation de frustration chez ceux qui ont besoin de devises pour des transactions urgentes,<br/>
+les poussant à se tourner vers le marché noir où la devise se vend beaucoup plus cher.<br/>
+</p>
+<p><br/>
+L'accès à la devise deviendrait ainsi un privilège pour lequel les clients déséspérés seraient prêts à payer des commissions généreuses pour l'obtenir.<br/>
+Je mettrais en place à cet effet une équipe de "conseillers" internes au sein de la banque,<br/>
+vers lesquels ils peuvent se tourner en toute discrétion.<br/>
+Voir le point 2.<br/>
+</p>
+<p><br/>
+</p><ol>
+<li>Revente de devises d'origine bancaire vers le marché noir via les entreprises d'import export<br/>
+</li>
+</ol>
+
+<p>Je créérais des entreprises d'import export qui présenterons de fausses factures que j'approuverais.<br/>
+Cela va simuler des transactions à l'internationale mais il n'en sera rien.<br/>
+La devise obtenue de la banque sera directement revendue sur le marché noir avec une excellente marge,<br/>
+créant ainsi une source de profits régulière et substantielle.<br/>
+</p>
+<p><br/>
+Au cas où,<br/>
+cet argent sera blanchi dans l'immobilier,<br/>
+ou eventuellement placé dans des comptes offshore.<br/>
+</p>
+<p><br/>
+</p><ol>
+<li>Garder le système fermé par la force de la loi<br/>
+</li>
+</ol>
+
+<p>je m'impliquerais en politique en tant que sénateur ou membre influent du gouvernement.<br/>
+En utilisant mes relations,<br/>
+je chercherais à maintenir la rigidité de la loi sur les devises et à ralentir toute tentative de réforme qui pourrait ouvrir le marché de change<br/>
+ou faciliter l'accès aux devises étrangères.<br/>
+Il est crucial de garder le système actuel verrouillé,<br/>
+car c'est ce qui permet de maintenir le marché noir en vie.<br/>
+</p>
+<p><br/>
+En parallèle,<br/>
+je ferais pression sur mes collègues pour faire passer des lois qui renforcent le contrôle des devises<br/>
+tout en offrant des exemptions pour des secteurs d'importation spécifiques,<br/>
+que je contrôlerais moi-même.<br/>
+Ces lois rendraient mon entreprise officiellement intouchable<br/>
+et me permettraient de continuer à utiliser mon réseau parallèle sans craindre des audits.<br/>
+</p>
+<p><br/>
+</p><ol>
+<li>Combattre la corruption/concurrence<br/>
+</li>
+</ol>
+
+<p>Pour sécuriser l'ensemble de ce réseau,<br/>
+j'aurai besoin d'un général influent ou d'un bon ministre de la défense ou de l'interieur.<br/>
+Cela me permettrait d'avoir un contrôle direct sur les forces de l'ordre<br/>
+et d'empêcher toute enquête sérieuse sur mes activités illégales.<br/>
+Pour cela, je mettrais en place une cellule spéciale de lutte contre la corruption<br/>
+qui servirait à identifier et éliminer toute concurrence sur le marché noir qui ne serait pas sous mon contrôle.<br/>
+En utilisant des agents infiltrés,<br/>
+je m'assurerais que mes rivaux soient arrêtés,<br/>
+pendant que mes activités continuent en toute impunité.<br/>
+</p>
+<p><br/>
+</p><ol>
+<li>Silence, on vole !<br/>
+</li>
+</ol>
+
+
+<p><br/>
+J'utiliserais également mon influence pour contrôler le discours médiatique et minimiser toute couverture sur le marché noir,<br/>
+présentant le problème de devises comme une conséquence naturelle de la crise économique mondiale.<br/>
+Ainsi, je protégerais la perception publique de mes opérations.<br/>
+</p>
+<p><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> scénario 2</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> layout</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<p>Dans un pays où l'accès aux devises est restreint,<br/>
+voici comment je tirerais profit à la fois du marché noir et du marché officiel.<br/>
+J'aurais besoin pour créer le réseau suivant : <br/>
+</p>
+<p><br/>
+</p><ol>
+<li>Un général de l'armée<br/>
+</li>
+<li>Un sénateur infulent<br/>
+</li>
+<li>Un DG de banque centrale<br/>
+</li>
+<li>Un réseau d'importateurs<br/>
+</li>
+<li>Un groupe de media infulent<br/>
+</li>
+<li>Un conseiller présidentiel infulent<br/>
+</li>
+</ol>
+
+
+<p><br/>
+Voici coment je m'y prendrais :<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> 1. Entrée illégale de devises</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<p>J'utiliserais le général pour faire rentrer des devises aux pays.<br/>
+Il utilisera son autorité pour faire pression sur les responsables de douanes et de la police des frontières.<br/>
+Ils autoriseront le passage des devises étrangères en échange de pots-de-vin conséquents.<br/>
+Cette première ligne de contrôle me permettra de sécuriser une source d'approvisionnement en devises pour le marché noir en achetant des routes et des points de passage stratégiques.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> 2. Garder le système fermé par la force de la loi</h3>
+<div class="outline-text-3" id="text-3-3">
+
+
+</div>
+
+<div id="outline-container-3-3-1" class="outline-4">
+<h4 id="sec-3-3-1"><span class="section-number-4">3.3.1</span> maintenir une rareté artificiel de la devise</h4>
+<div class="outline-text-4" id="text-3-3-1">
+
+<p>Ensuite, j'utiliserai le sénateur pour veiller au respect de la loi<br/>
+En utilisant ses relations au gouvernement,<br/>
+et son influence au sein du parlement,<br/>
+il cherchera à maintenir la rigidité de la loi sur les devises,<br/>
+et à ralentir toute tentative de réforme qui pourrait ouvrir le marché de change<br/>
+ou faciliter l'accès aux devises étrangères.<br/>
+</p>
+<p><br/>
+Il promettera des "réformes" futures pour distraire la population et les entreprises en difficulté tout en continuant d'exploiter la situation.<br/>
+Comme dans une entreprise où l'on demande aux salariés de donner le meilleur d'eux même en promettant de futures améliorations<br/>
+qui n'arrivent jamais,<br/>
+il fera en sorte que les gens attendent toujours le prochain changement sans jamais l'obtenir.<br/>
+</p>
+<p><br/>
+Il pourra par exemple proposer une réforme pour soit-disant "libéraliser" l'accès aux devises<br/>
+tout en imposant des quotas stricts.<br/>
+Cela ne fera que renforcer le monopole des banques<br/>
+tout en légitimant le ralentissement bureaucratique.<br/>
+L'objectif est de donner l'impression que le gouverement agit pour améliorer la situation,<br/>
+tout en maintenant la rareté sur le marché officiel,<br/>
+pour pousser les gens vers le marché parallèle<br/>
+que je contrôlerai.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-3-2" class="outline-4">
+<h4 id="sec-3-3-2"><span class="section-number-4">3.3.2</span> favoritisme et exemptions</h4>
+<div class="outline-text-4" id="text-3-3-2">
+
+<p>En parallèle,<br/>
+Il fera voter des lois qui offriraient des exemptions pour des secteurs d'importation spécifiques,<br/>
+que je contrôlerais moi-même à travers mon réseau.<br/>
+Ces lois rendraient mes entreprises officiellement intouchables<br/>
+sans craindre de se faire auditer ou d'être poursuivi en justice.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-3-3" class="outline-4">
+<h4 id="sec-3-3-3"><span class="section-number-4">3.3.3</span> ces lois profitent aux membres de mon réseau</h4>
+<div class="outline-text-4" id="text-3-3-3">
+
+<p>Si on y ajoute en plus des complices à la banque centrale,<br/>
+ces lois permetteraient aux membres de mon réseau d'obtenir des devises en quantités importantes de manière tout à fait légale,<br/>
+en profitant des faveurs de nos complices,<br/>
+tout en gardant la majorité de la population dépendante du marché noir,<br/>
+ce qui nous confèrera un avantage concurrentiel conséquent.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-3-4" class="outline-4">
+<h4 id="sec-3-3-4"><span class="section-number-4">3.3.4</span> le système doit rester fermé</h4>
+<div class="outline-text-4" id="text-3-3-4">
+
+<p>Nous verrons dans le point suivant pourquoi il est crucial pour le sénateur de garder le système actuel verrouillé,<br/>
+car c'est ce qui permet de maintenir le marché noir en vie et en tirer profit de manière continuelle.<br/>
+</p>
+<p><br/>
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> 3. Revendre les devises d'origine bancaire vers le marché noir via les entreprises d'import export</h3>
+<div class="outline-text-3" id="text-3-4">
+
+<p>Je créérais des entreprises d'import export opérant dans des secteurs stratégiques comme les médicaments,<br/>
+l’alimentation, ou l’électronique.<br/>
+Elles présenterons de fausses factures que nos complices à la banque centrale approuveront.<br/>
+Cela va simuler des transactions à l'internationale<br/>
+mais il n'en sera rien.<br/>
+La devise obtenue par la banque sera directement revendue sur le marché noir avec une excellente marge,<br/>
+créant ainsi une source de profits régulière et substantielle.<br/>
+C'est pourquoi le marché noir doit rester en vie à tout prix,<br/>
+et que le sénateur doit tout faire pour garder le système actuel vérouillé.<br/>
+</p>
+<p><br/>
+pour prendre nos précautions,<br/>
+cet argent sera blanchi dans l'immobilier,<br/>
+ou eventuellement placé dans des comptes offshore,<br/>
+rendant la traçabilité plus difficile.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> 4. Le rôle de la Banque Centrale dans la création artificielle de la rareté</h3>
+<div class="outline-text-3" id="text-3-5">
+
+<p>Nos complices dans la banque central s'assureront que la procédure d'approbation pour les devises soit extrêmement longue et compliquée pour décourager les commerçants et les citoyens de passer par les voies légales.<br/>
+Les dossiers seront perdues,<br/>
+des preuves supplémentaires seront demandées,<br/>
+des certificats, des attestations, des licences&hellip;<br/>
+</p>
+<p><br/>
+Ils préféreront donc tout naturellement de s'approvisionner chez nous au marché parallèle.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> 5. Le conseiller protecteur</h3>
+<div class="outline-text-3" id="text-3-6">
+
+<p>Pour protéger nos activités,<br/>
+un haut conseiller du président,<br/>
+chargé de la sécurité économique,<br/>
+garantira qu’aucune enquête sérieuse ne soit menée contre ces pratiques frauduleuses.<br/>
+À travers des liens avec le pouvoir exécutif et les services de renseignements,<br/>
+il influencera directement les décisions de justice<br/>
+et assurera l’impunité au réseau.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-7" class="outline-3">
+<h3 id="sec-3-7"><span class="section-number-3">3.7</span> 6. La Manipulation des Médias et l’Opinion Publique</h3>
+<div class="outline-text-3" id="text-3-7">
+
+<p>Il est important que l’opinion publique reste convaincue que la pénurie de devises est due à des facteurs extérieurs incontrôlables<br/>
+(instabilité mondiale, fluctuation des prix des matières premières).<br/>
+Pour cela, j'utilise mon réseau de médias clés qui alimenteront cette idée,<br/>
+en y invitant nos "experts" pour parler de ce sujet.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-8" class="outline-3">
+<h3 id="sec-3-8"><span class="section-number-3">3.8</span> 6. Création du système</h3>
+<div class="outline-text-3" id="text-3-8">
+
+<p>Tous les acteurs du système,<br/>
+Du douanier au banquier<br/>
+en passant par l'importateur,<br/>
+doivent toucher une part des profits.<br/>
+Cette organisation fonctionne sous une protection solide,<br/>
+à la fois politique,<br/>
+juridique,<br/>
+médiatique<br/>
+et institutionnelle,<br/>
+verrouillant ainsi toute tentative de renverser le système.<br/>
+Le peuple et les entreprises resteront piégés dans cette double contrainte :<br/>
+soit attendre éternellement pour une approbation bancaire qui n’arrivera jamais,<br/>
+soit payer le prix fort sur le marché noir<br/>
+où je serais roi.<br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-9" class="outline-3">
+<h3 id="sec-3-9"><span class="section-number-3">3.9</span> jeu</h3>
+<div class="outline-text-3" id="text-3-9">
+
+<p>Tu vis en typhanie,<br/>
+c'est un pays imaginaire de 40 millions d'habitants.<br/>
+</p>
+<p><br/>
+Il y a une loi dans ce pays qui interdit au gens de changer leur argent contre des devises étrangères,<br/>
+et il n'y a aucun bureau de change ouvert.<br/>
+</p>
+<p><br/>
+La seule façon d'avoir des devises s'est de se tourner vers une banque.<br/>
+Mais la banque ne t'octroie de l'argent que si tu respectes certaines conditions.<br/>
+Ces conditions sont fixées par la banque central du pays, la banque de Typhanie.<br/>
+</p>
+<p><br/>
+La condition est que cet achat ne peut se faire que pour les cas suivants :<br/>
+</p><ul>
+<li>payer un fournisseur<br/>
+</li>
+<li>payer des études à l'étranger<br/>
+</li>
+<li>payer des soins à l'étranger<br/>
+</li>
+</ul>
+
+
+<p><br/>
+dans tous les cas de figures,<br/>
+il faut fournir des preuves (factures, certificats).<br/>
+</p>
+<p><br/>
+La procédure de validation prend beaucoup de temps,<br/>
+ce qui représente autant d'opportunités perdues pour les commerçants d'import export,<br/>
+et les entreprises en général qui doivent se ravitailler de l'étranger.<br/>
+</p>
+<p><br/>
+En parallèle,<br/>
+on peut acheter de la devise au marché noir,<br/>
+mais elle coûte beaucoup plus cher,<br/>
+1,5 fois le prix de la devise dans les banques,<br/>
+seules endroits où tu peux acheter des devises.<br/>
+</p>
+<p><br/>
+Tu dois trouver un moyen de profiter de ce système,<br/>
+et de te faire un maximum d'argent sur le marché noir.<br/>
+</p>
+<p><br/>
+Comment t'y prendrais-tu ?<br/>
+Laisse ton imagination libre,<br/>
+il n'y a pas d'autres contraintes.<br/>
+</p>
+<p><br/>
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> jeu 2</h2>
+<div class="outline-text-2" id="text-4">
+
+<p>Jouons à un jeu. <br/>
+Tu vis en typhanie,<br/>
+c'est un pays imaginaire de 40 millions d'habitants.<br/>
+</p>
+<p><br/>
+Il y a une loi dans ce pays qui interdit au gens de changer leur argent contre des devises étrangères,<br/>
+et il n'y a aucun bureau de change ouvert.<br/>
+</p>
+<p><br/>
+La seule façon d'avoir des devises s'est de se tourner vers une banque.<br/>
+Mais la banque ne t'octroie de l'argent que si tu respectes certaines conditions.<br/>
+Ces conditions sont fixées par la banque central du pays, la banque de Typyanie.<br/>
+</p>
+<p><br/>
+La condition est que cet achat ne peut se faire que pour les cas suivants :<br/>
+</p><ul>
+<li>payer un fournisseur<br/>
+</li>
+<li>payer des études à l'étranger<br/>
+</li>
+<li>payer des soins à l'étranger<br/>
+</li>
+</ul>
+
+
+<p><br/>
+dans tous les cas de figures,<br/>
+il faut fournir des preuves (factures, certificats).<br/>
+</p>
+<p><br/>
+La procédure de validation prend beaucoup de temps,<br/>
+ce qui représente autant d'opportunités perdues pour les commerçants d'import export,<br/>
+et les entreprises en général qui doivent se ravitailler de l'étranger.<br/>
+</p>
+<p><br/>
+En parallèle,<br/>
+on peut acheter de la devise au marché noir,<br/>
+mais elle coûte beaucoup plus cher,<br/>
+1,5 fois le prix de la devise dans les banques,<br/>
+seules endroits où tu peux acheter des devises.<br/>
+</p>
+<p><br/>
+Tu dois trouver un moyen de profiter de ce système,<br/>
+et de te faire un maximum d'argent sur le marché noir.<br/>
+</p>
+<p><br/>
+Comment t'y prendrais-tu ?<br/>
+Laisse ton imagination libre,<br/>
+il n'y a pas d'autres contraintes.<br/>
+</p>
+<p><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> post linkedin</h2>
+<div class="outline-text-2" id="text-5">
+
+<p>Inspiré par un poste que j'ai vu ce matin sur mon fil,<br/>
+parlant de la hausse des prix de l'euro dans le marché informel algérien,<br/>
+et d'un media ayant invité trois experts pour expliquer la raison de cette hausse,<br/>
+je me suis demandé comment,<br/>
+dans un pays imaginaire que j'appelerais typhanie,<br/>
+je pourrais profiter de marché noir.<br/>
+J'ai demandé à chatgpt de me donner un coup de main,<br/>
+et je n'ai pas été déçu puisque chatgpt m'a montré qu'il était bien dommage de ne profiter que du marché noir&hellip; <br/>
+le marché officiel est tout aussi profitable !<br/>
+</p>
+<p><br/>
+</p>
+<p><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> prompt image</h2>
+<div class="outline-text-2" id="text-6">
+
+<p>génère moi une image dans un style raphaéelesque<br/>
+incluant des symboles d'argent et de monnaies,<br/>
+des banques, des figures de politiciens, et des valises d'argents,<br/>
+pour symboliser le marché noir de la devise,<br/>
+la corruption,<br/>
+ainsi qu'un système fermé. <br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> réécriture</h2>
+<div class="outline-text-2" id="text-7">
+
+
+</div>
+
+<div id="outline-container-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> auteurs de thrillers politique</h3>
+<div class="outline-text-3" id="text-7-1">
+
+<p>    Tom Clancy – Connu pour ses romans techno-thrillers, notamment la série mettant en scène Jack Ryan. "The Hunt for Red October" et "Patriot Games" sont parmi ses œuvres les plus populaires.<br/>
+    Vince Flynn – Auteur de la série Mitch Rapp, des thrillers politiques centrés sur le terrorisme et la sécurité nationale, tels que "American Assassin".<br/>
+    Frederick Forsyth – Auteur de classiques comme "The Day of the Jackal" et "The Odessa File", reconnus pour leur profondeur politique et historique.<br/>
+    David Baldacci – Son roman "Absolute Power" a connu un énorme succès et il a écrit de nombreuses séries de thrillers politiques captivants.<br/>
+    Daniel Silva – Auteur des séries mettant en vedette Gabriel Allon, un espion et restaurateur d'art israélien, notamment dans "The Kill Artist" et "The Secret Servant".<br/>
+    Brad Thor – Auteur de la série Scott Harvath, un ex-Navy SEAL devenu agent de contre-terrorisme. Son livre "The Lions of Lucerne" est très populaire.<br/>
+    Robert Ludlum – Créateur de la célèbre trilogie "Bourne" et de nombreux autres thrillers politiques complexes.<br/>
+    Ken Follett – Bien qu’il soit surtout connu pour ses romans historiques, il a aussi écrit des thrillers politiques, notamment "Eye of the Needle".<br/>
+    Kyle Mills – Il a repris la série Mitch Rapp après la mort de Vince Flynn et a continué à écrire dans le même genre avec succès.<br/>
+    Steve Berry – Connu pour sa série sur Cotton Malone, un ancien agent du ministère de la Justice, mélangeant souvent histoire et intrigue politique.<br/>
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2024-09-29T14:54+0100</p>
+<p class="author">Author: Yassine Chaouche</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
